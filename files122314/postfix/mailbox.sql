@@ -1,0 +1,3 @@
+INSERT INTO mailbox (username,password,name,maildir,quota,local_part,domain,created,modified,active)VALUES ("payments@deliap.com","{SHA512-CRYPT}$6$f7a87c2c05b45a9b$.ta9X4wT7EAUbDApWH88gA6b3YlbW2vNMZKXrP9V1cV.Zc8py2NpjUTNfrfrLXQ0mtWg.DomtpVT.ZvJLT8YD/","","deliap.com/payments/","52428800000","payments","deliap.com","2020-06-15 12:17:57","2020-06-15 12:17:57","1")
+INSERT INTO mailbox (username,password,name,maildir,quota,local_part,domain,created,modified,active)VALUES ("info@deliap.com","{SHA512-CRYPT}$6$995d55c29bb6c21b$SWix9W1qTj2tscvdaQRnYkZ63/dojI6882/8DPerUAOboz5YdgayBK3I6hu95Ljb/E0nkG6oVv54Hzj6.x9NS.","","deliap.com/info/","524288000000","info","deliap.com","2020-06-24 10:24:21","2020-06-24 10:24:21","1")
+

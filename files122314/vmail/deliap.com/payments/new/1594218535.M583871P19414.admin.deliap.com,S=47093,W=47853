@@ -1,0 +1,760 @@
+Return-Path: <support@stripe.zendesk.com>
+Delivered-To: payments@deliap.com
+Received: from outbyoip1.pod14.use1.zdsys.com (outbyoip1.pod14.use1.zdsys.com [192.161.148.1])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by admin.deliap.com (Postfix) with ESMTPS id 39E8B6810AE
+	for <payments@deliap.com>; Wed,  8 Jul 2020 14:28:55 +0000 (UTC)
+Received: from zendesk.com (unknown [10.217.111.212])
+	by outbyoip1.pod14.use1.zdsys.com (Postfix) with ESMTP id 4B21rj6MGpz3hhTF
+	for <payments@deliap.com>; Wed,  8 Jul 2020 14:28:53 +0000 (UTC)
+Date: Wed, 08 Jul 2020 14:28:53 +0000
+From: Stripe Support <support@stripe.zendesk.com>
+Reply-To: Stripe Support <support+id12119552@stripe.zendesk.com>
+To: Hassan <payments@deliap.com>
+Message-ID: <M7MO3EQK99_5f05d82528edb_5f5ca5d0367458_sprut@zendesk.com>
+In-Reply-To: <M7MO3EQK99@zendesk.com>
+Subject: Payouts paused for your Stripe account
+ (play.google.com/store/apps/details)
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5f05d825bae68_5f5ca5d03675b4";
+ charset=utf-8
+Content-Transfer-Encoding: 7bit
+X-Delivery-Context: event-id-1211629446733
+Auto-Submitted: auto-generated
+X-Auto-Response-Suppress: All
+X-Mailer: Zendesk Mailer
+X-Zendesk-From-Account-Id: b5582ab
+DKIM-Signature:  v=1; a=rsa-sha256; c=relaxed/relaxed; d=zendesk.com;
+ q=dns/txt; s=zendesk1; t=1594218533;
+ bh=rYzpAeSG24FX3B2eR5nzhuArAV/ihWQR2jlDLauFQpc=;
+ h=date:from:reply-to:to:message-id:in-reply-to:subject:mime-version:content-type:content-transfer-encoding;
+ b=qd251mKWXsl9GfsuR+zFg1wU3Iv55++hOE0EburX/xfx4XzRzx6Jz+w5I3TNIhplWWi380OhsL/vm3DMvMjD3V5U1LAOLPvhzerRGIBU9eLdZy/PydyVrnwO8X6FBzk8NMr8+9NYVKgwd966uTmSfa8wgUCDJA5eR4WcgUhkZOPCrQVyGstcbbwQ/NGdknDY8vX87aTbGQvNSKzFnm7t4M4WNgu8ExJUlv17tsB2HmxTUGg7+0IciyKa00DOMK4NdHA4njl85S4XpL70qCxeD1iV1O6xKi3sM9tfpC7NEvsQjAOfULNoA6VvZCszbNCa5tA1KuWbXe/6eQM0MUu8nw==
+
+
+----==_mimepart_5f05d825bae68_5f5ca5d03675b4
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+##- Please type your reply above this line -##
+
+----------------------------------------------
+
+Stripe Support, Jul 8, 2020, 2:28 PM UTC
+
+ Payouts paused for your Stripe account (play.google.com/store/apps/detai=
+ls) =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=
+=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C=
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C
+
+ ![Stripe](https://stripe-images.s3.amazonaws.com/html_emails/2017-08-21/=
+header/Header-background.png)
+
+
+
+  Hi Hassan,
+
+
+
+
+  Thanks for using Stripe! We are excited to have you on board, and just =
+need to collect a bit more information to resume payouts to your bank acc=
+ount[0].
+
+
+
+
+  Don't worry: you'll still be able to charge payments. As soon as we are=
+ able to successfully verify your account, we will immediately resume pay=
+outs to your bank account.
+
+
+
+
+  Unfortunately, we weren't able to verify your identity based on the inf=
+ormation you have provided upon setup.
+
+
+
+
+  In order to get your Stripe account fully up and running, we need to ha=
+ve you upload a scan or photograph of a government-issued photo ID via yo=
+ur Dashboard:
+
+
+
+
+  https://dashboard.stripe.com/account/verifications
+
+
+
+
+  A few notes to consider before uploading your ID [1]:
+
+
+
+
+  - We need a color photo of your ID, which you can take with a phone, we=
+bcam, or scanner
+
+
+
+
+  - If you are uploading a driver's license or identity card, we may requ=
+est an image of both the front and back of your ID
+
+
+
+
+  - We accept JPEG and PNG file formats
+
+
+
+
+  - We cannot verify PDFs
+
+
+
+
+  Please don't hesitate to reach out if you run into any problems with th=
+is process.
+
+
+
+
+  Best,
+
+
+
+
+  Stripe
+
+
+
+
+  [0] You can continue creating charges, but to comply with legal and reg=
+ulatory requirements, we will need you to go through this final piece of =
+verification to ensure we can transfer future payments to your bank accou=
+nt.
+
+
+
+
+  [1] https://support.stripe.com/questions/troubleshooting-id-upload-for-=
+identity-verification
+
+
+
+
+
+
+
+
+
+
+
+
+  Stripe, 510 Townsend Street, San Francisco, CA 94103
+
+
+
+
+
+--------------------------------
+This email is a service from Stripe.
+
+
+
+
+
+
+
+
+
+[M7MO3E-QK99]=
+
+----==_mimepart_5f05d825bae68_5f5ca5d03675b4
+Content-Type: text/html;
+ charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!-- <div style=3D"color: #bbbbbb">##- Please type your reply above this =
+line -##</div> -->
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF=
+-8" />
+</head>
+  <body>
+    <p dir=3D"ltr"></p>
+    <div class=3D"zd-comment" dir=3D"auto" style=3D"color: #2b2e2f; font-=
+family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-s=
+erif; font-size: 14px; line-height: 22px; margin: 15px 0">               =
+           <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"background-color: f6f9fc; border: 0; border-collapse: col=
+lapse; font-size: 1em; margin: 0; padding: 0; width: 100%" bgcolor=3D"f6f=
+9fc">      <tbody>        <tr>          <td style=3D"-webkit-font-smoothi=
+ng: antialiased !important; border: 0 solid #ddd; font-family: 'Lucida Sa=
+ns Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; margin: 0; p=
+adding: 0; vertical-align: top" valign=3D"top">                        <t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"600" style=3D"background-color: ffffff; border-bottom-left-radius:=
+ 5px; border-bottom-right-radius: 5px; border-collapse: collapse; font-si=
+ze: 1em; margin: 0 auto; min-width: 600px; width: 100%" bgcolor=3D"ffffff=
+">              <tbody>                <tr>                  <td style=3D=
+"-webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; fo=
+nt-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, san=
+s-serif; margin: 0; padding: 0; vertical-align: top" valign=3D"top">     =
+                         <table border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"600" style=3D"border-collapse: collapse; font-size: 1em;=
+ min-width: 600px; width: 100%">  <tbody>    <tr>      <td align=3D"cente=
+r" height=3D"0" style=3D"-webkit-font-smoothing: antialiased !important; =
+border: 0 solid #ddd; color: #ffffff; display: none !important; font-fami=
+ly: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif=
+; font-size: 1px; line-height: 1px; margin: 0; max-height: 0; max-width: =
+0; opacity: 0; overflow: hidden; padding: 0; vertical-align: top; visibil=
+ity: hidden" valign=3D"top">        <span style=3D"-webkit-font-smoothing=
+: antialiased !important; border: 0; color: #ffffff; margin: 0; outline: =
+0 !important; padding: 0; text-decoration: none !important">          Pay=
+outs paused for your Stripe account (play.google.com/store/apps/details) =
+                   =E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=
+=C2=A0                  </span>      </td>    </tr>  </tbody></table>    =
+      <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"60=
+0" style=3D"border-collapse: collapse; font-size: 1em; min-width: 600px; =
+width: 100%">  <tbody>    <tr>      <td align=3D"left" height=3D"76" styl=
+e=3D"-webkit-font-smoothing: antialiased !important; background-color: #f=
+6f9fc; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida =
+Grande', 'Tahoma', Verdana, sans-serif; margin: 0; padding: 0; vertical-a=
+lign: top" bgcolor=3D"#f6f9fc" valign=3D"top">        <div style=3D"backg=
+round-repeat: no-repeat !important; background-size: 600px 76px !importan=
+t; height: 76px !important; width: 600px !important">          <a style=3D=
+"-webkit-font-smoothing: antialiased !important; border: 0; margin: 0; ou=
+tline: 0 !important; padding: 0; text-decoration: none !important" href=3D=
+"https://stripe.com" rel=3D"noreferrer">            <img alt=3D"Stripe" b=
+order=3D"0" height=3D"76" width=3D"600" style=3D"border: 0; color: #32325=
+d; display: block; font-size: 12px; font-weight: normal; margin: 0; max-w=
+idth: 100%; padding: 0" src=3D"https://stripe-images.s3.amazonaws.com/htm=
+l_emails/2017-08-21/header/Header-background.png" />          </a>       =
+ </div>      </td>    </tr>    <tr>      <td height=3D"32" style=3D"-webk=
+it-font-smoothing: antialiased !important; border: 0 solid #ddd; font-fam=
+ily: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-seri=
+f; font-size: 1px; line-height: 1px; margin: 0; max-height: 1px; padding:=
+ 0; vertical-align: top" valign=3D"top">        <div>=C2=A0</div>      </=
+td>    </tr>  </tbody></table>          <table border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"600" style=3D"border-collapse: collapse; f=
+ont-size: 1em; min-width: 600px; width: 100%">  <tbody>    <tr>      <td =
+style=3D"-webkit-font-smoothing: antialiased !important; border: 0 solid =
+#ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verd=
+ana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0;=
+ vertical-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</di=
+v>      </td>      <td style=3D"-webkit-font-smoothing: antialiased !impo=
+rtant; border: 0 solid #ddd; color: #525F7f !important; font-family: 'Luc=
+ida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-s=
+ize: 16px; line-height: 24px; margin: 0; padding: 0; vertical-align: top"=
+ valign=3D"top">      Hi Hassan,      </td>      <td style=3D"-webkit-fon=
+t-smoothing: antialiased !important; border: 0 solid #ddd; font-family: '=
+Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; fon=
+t-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top=
+" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>    </t=
+r>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-webkit-font-smo=
+othing: antialiased !important; border: 0 solid #ddd; font-family: 'Lucid=
+a Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-siz=
+e: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" val=
+ign=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </tbody></tabl=
+e><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" s=
+tyle=3D"border-collapse: collapse; font-size: 1em; min-width: 600px; widt=
+h: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smoothing: anti=
+aliased !important; border: 0 solid #ddd; font-family: 'Lucida Sans Unico=
+de', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line=
+-height: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" va=
+lign=3D"top">        <div>=C2=A0</div>      </td>      <td style=3D"-webk=
+it-font-smoothing: antialiased !important; border: 0 solid #ddd; color: #=
+525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucida Grande', '=
+Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 24px; margin:=
+ 0; padding: 0; vertical-align: top" valign=3D"top">      Thanks for usin=
+g Stripe! We are excited to have you on board, and just need to collect a=
+ bit more information to resume payouts to your bank account[0].      </t=
+d>      <td style=3D"-webkit-font-smoothing: antialiased !important; bord=
+er: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'T=
+ahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0;=
+ padding: 0; vertical-align: top" width=3D"64" valign=3D"top">        <di=
+v>=C2=A0</div>      </td>    </tr>    <tr>      <td colspan=3D"3" height=3D=
+"12" style=3D"-webkit-font-smoothing: antialiased !important; border: 0 s=
+olid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma',=
+ Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; paddin=
+g: 0; vertical-align: top" valign=3D"top">        <div>=C2=A0</div>      =
+</td>    </tr>  </tbody></table><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"600" style=3D"border-collapse: collapse; font-siz=
+e: 1em; min-width: 600px; width: 100%">  <tbody>    <tr>      <td style=3D=
+"-webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; fo=
+nt-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, san=
+s-serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertica=
+l-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      =
+</td>      <td style=3D"-webkit-font-smoothing: antialiased !important; b=
+order: 0 solid #ddd; color: #525F7f !important; font-family: 'Lucida Sans=
+ Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 16p=
+x; line-height: 24px; margin: 0; padding: 0; vertical-align: top" valign=3D=
+"top">      Don't worry: you'll still be able to charge payments. As soon=
+ as we are able to successfully verify your account, we will immediately =
+resume payouts to your bank account.      </td>      <td style=3D"-webkit=
+-font-smoothing: antialiased !important; border: 0 solid #ddd; font-famil=
+y: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif;=
+ font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align:=
+ top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>   =
+ </tr>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-webkit-font=
+-smoothing: antialiased !important; border: 0 solid #ddd; font-family: 'L=
+ucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font=
+-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top"=
+ valign=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </tbody></=
+table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"60=
+0" style=3D"border-collapse: collapse; font-size: 1em; min-width: 600px; =
+width: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smoothing: =
+antialiased !important; border: 0 solid #ddd; font-family: 'Lucida Sans U=
+nicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; =
+line-height: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64=
+" valign=3D"top">        <div>=C2=A0</div>      </td>      <td style=3D"-=
+webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; colo=
+r: #525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucida Grande=
+', 'Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 24px; mar=
+gin: 0; padding: 0; vertical-align: top" valign=3D"top">      Unfortunate=
+ly, we weren't able to verify your identity based on the information you =
+have provided upon setup.      </td>      <td style=3D"-webkit-font-smoot=
+hing: antialiased !important; border: 0 solid #ddd; font-family: 'Lucida =
+Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size:=
+ 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" width=
+=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>    </tr>    <=
+tr>      <td colspan=3D"3" height=3D"12" style=3D"-webkit-font-smoothing:=
+ antialiased !important; border: 0 solid #ddd; font-family: 'Lucida Sans =
+Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px;=
+ line-height: 1px; margin: 0; padding: 0; vertical-align: top" valign=3D"=
+top">        <div>=C2=A0</div>      </td>    </tr>  </tbody></table><tabl=
+e border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=3D=
+"border-collapse: collapse; font-size: 1em; min-width: 600px; width: 100%=
+">  <tbody>    <tr>      <td style=3D"-webkit-font-smoothing: antialiased=
+ !important; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'L=
+ucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height=
+: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" valign=3D=
+"top">        <div>=C2=A0</div>      </td>      <td style=3D"-webkit-font=
+-smoothing: antialiased !important; border: 0 solid #ddd; color: #525F7f =
+!important; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma'=
+, Verdana, sans-serif; font-size: 16px; line-height: 24px; margin: 0; pad=
+ding: 0; vertical-align: top" valign=3D"top">      In order to get your S=
+tripe account fully up and running, we need to have you upload a scan or =
+photograph of a government-issued photo ID via your Dashboard:      </td>=
+      <td style=3D"-webkit-font-smoothing: antialiased !important; border=
+: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tah=
+oma', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; p=
+adding: 0; vertical-align: top" width=3D"64" valign=3D"top">        <div>=
+=C2=A0</div>      </td>    </tr>    <tr>      <td colspan=3D"3" height=3D=
+"12" style=3D"-webkit-font-smoothing: antialiased !important; border: 0 s=
+olid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma',=
+ Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; paddin=
+g: 0; vertical-align: top" valign=3D"top">        <div>=C2=A0</div>      =
+</td>    </tr>  </tbody></table><table border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"600" style=3D"border-collapse: collapse; font-siz=
+e: 1em; min-width: 600px; width: 100%">  <tbody>    <tr>      <td style=3D=
+"-webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; fo=
+nt-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, san=
+s-serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertica=
+l-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      =
+</td>      <td style=3D"-webkit-font-smoothing: antialiased !important; b=
+order: 0 solid #ddd; color: #525F7f !important; font-family: 'Lucida Sans=
+ Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 16p=
+x; line-height: 24px; margin: 0; padding: 0; vertical-align: top" valign=3D=
+"top">      <a href=3D"https://dashboard.stripe.com/account/verifications=
+" rel=3D"noreferrer">https://dashboard.stripe.com/account/verifications</=
+a>      </td>      <td style=3D"-webkit-font-smoothing: antialiased !impo=
+rtant; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida =
+Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px;=
+ margin: 0; padding: 0; vertical-align: top" width=3D"64" valign=3D"top">=
+        <div>=C2=A0</div>      </td>    </tr>    <tr>      <td colspan=3D=
+"3" height=3D"12" style=3D"-webkit-font-smoothing: antialiased !important=
+; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grand=
+e', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; marg=
+in: 0; padding: 0; vertical-align: top" valign=3D"top">        <div>=C2=A0=
+</div>      </td>    </tr>  </tbody></table><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"600" style=3D"border-collapse: collap=
+se; font-size: 1em; min-width: 600px; width: 100%">  <tbody>    <tr>     =
+ <td style=3D"-webkit-font-smoothing: antialiased !important; border: 0 s=
+olid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma',=
+ Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; paddin=
+g: 0; vertical-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0=
+</div>      </td>      <td style=3D"-webkit-font-smoothing: antialiased !=
+important; border: 0 solid #ddd; color: #525F7f !important; font-family: =
+'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; fo=
+nt-size: 16px; line-height: 24px; margin: 0; padding: 0; vertical-align: =
+top" valign=3D"top">      A few notes to consider before uploading your I=
+D [1]:      </td>      <td style=3D"-webkit-font-smoothing: antialiased !=
+important; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Luc=
+ida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: =
+1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" valign=3D"t=
+op">        <div>=C2=A0</div>      </td>    </tr>    <tr>      <td colspa=
+n=3D"3" height=3D"12" style=3D"-webkit-font-smoothing: antialiased !impor=
+tant; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida G=
+rande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; =
+margin: 0; padding: 0; vertical-align: top" valign=3D"top">        <div>=C2=
+=A0</div>      </td>    </tr>  </tbody></table><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"600" style=3D"border-collapse: col=
+lapse; font-size: 1em; min-width: 600px; width: 100%">  <tbody>    <tr>  =
+    <td style=3D"-webkit-font-smoothing: antialiased !important; border: =
+0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahom=
+a', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; pad=
+ding: 0; vertical-align: top" width=3D"64" valign=3D"top">        <div>=C2=
+=A0</div>      </td>      <td style=3D"-webkit-font-smoothing: antialiase=
+d !important; border: 0 solid #ddd; color: #525F7f !important; font-famil=
+y: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif;=
+ font-size: 16px; line-height: 24px; margin: 0; padding: 0; vertical-alig=
+n: top" valign=3D"top">      - We need a color photo of your ID, which yo=
+u can take with a phone, webcam, or scanner      </td>      <td style=3D"=
+-webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; fon=
+t-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans=
+-serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical=
+-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      <=
+/td>    </tr>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-webk=
+it-font-smoothing: antialiased !important; border: 0 solid #ddd; font-fam=
+ily: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-seri=
+f; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-alig=
+n: top" valign=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </t=
+body></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"600" style=3D"border-collapse: collapse; font-size: 1em; min-width: =
+600px; width: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smoo=
+thing: antialiased !important; border: 0 solid #ddd; font-family: 'Lucida=
+ Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size=
+: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" widt=
+h=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>      <td sty=
+le=3D"-webkit-font-smoothing: antialiased !important; border: 0 solid #dd=
+d; color: #525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucida=
+ Grande', 'Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 24=
+px; margin: 0; padding: 0; vertical-align: top" valign=3D"top">      - If=
+ you are uploading a driver's license or identity card, we may request an=
+ image of both the front and back of your ID      </td>      <td style=3D=
+"-webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; fo=
+nt-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, san=
+s-serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertica=
+l-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      =
+</td>    </tr>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-web=
+kit-font-smoothing: antialiased !important; border: 0 solid #ddd; font-fa=
+mily: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-ser=
+if; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-ali=
+gn: top" valign=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </=
+tbody></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wid=
+th=3D"600" style=3D"border-collapse: collapse; font-size: 1em; min-width:=
+ 600px; width: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smo=
+othing: antialiased !important; border: 0 solid #ddd; font-family: 'Lucid=
+a Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-siz=
+e: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" wid=
+th=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>      <td st=
+yle=3D"-webkit-font-smoothing: antialiased !important; border: 0 solid #d=
+dd; color: #525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucid=
+a Grande', 'Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 2=
+4px; margin: 0; padding: 0; vertical-align: top" valign=3D"top">      - W=
+e accept JPEG and PNG file formats      </td>      <td style=3D"-webkit-f=
+ont-smoothing: antialiased !important; border: 0 solid #ddd; font-family:=
+ 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; f=
+ont-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: t=
+op" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>    <=
+/tr>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-webkit-font-s=
+moothing: antialiased !important; border: 0 solid #ddd; font-family: 'Luc=
+ida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-s=
+ize: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" v=
+align=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </tbody></ta=
+ble><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600"=
+ style=3D"border-collapse: collapse; font-size: 1em; min-width: 600px; wi=
+dth: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smoothing: an=
+tialiased !important; border: 0 solid #ddd; font-family: 'Lucida Sans Uni=
+code', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; li=
+ne-height: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" =
+valign=3D"top">        <div>=C2=A0</div>      </td>      <td style=3D"-we=
+bkit-font-smoothing: antialiased !important; border: 0 solid #ddd; color:=
+ #525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucida Grande',=
+ 'Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 24px; margi=
+n: 0; padding: 0; vertical-align: top" valign=3D"top">      - We cannot v=
+erify PDFs      </td>      <td style=3D"-webkit-font-smoothing: antialias=
+ed !important; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', =
+'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-heig=
+ht: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" valign=3D=
+"top">        <div>=C2=A0</div>      </td>    </tr>    <tr>      <td cols=
+pan=3D"3" height=3D"12" style=3D"-webkit-font-smoothing: antialiased !imp=
+ortant; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida=
+ Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px=
+; margin: 0; padding: 0; vertical-align: top" valign=3D"top">        <div=
+>=C2=A0</div>      </td>    </tr>  </tbody></table><table border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"600" style=3D"border-collapse:=
+ collapse; font-size: 1em; min-width: 600px; width: 100%">  <tbody>    <t=
+r>      <td style=3D"-webkit-font-smoothing: antialiased !important; bord=
+er: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'T=
+ahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0;=
+ padding: 0; vertical-align: top" width=3D"64" valign=3D"top">        <di=
+v>=C2=A0</div>      </td>      <td style=3D"-webkit-font-smoothing: antia=
+liased !important; border: 0 solid #ddd; color: #525F7f !important; font-=
+family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-s=
+erif; font-size: 16px; line-height: 24px; margin: 0; padding: 0; vertical=
+-align: top" valign=3D"top">      Please don't hesitate to reach out if y=
+ou run into any problems with this process.      </td>      <td style=3D"=
+-webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; fon=
+t-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans=
+-serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical=
+-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      <=
+/td>    </tr>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-webk=
+it-font-smoothing: antialiased !important; border: 0 solid #ddd; font-fam=
+ily: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-seri=
+f; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-alig=
+n: top" valign=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </t=
+body></table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"600" style=3D"border-collapse: collapse; font-size: 1em; min-width: =
+600px; width: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smoo=
+thing: antialiased !important; border: 0 solid #ddd; font-family: 'Lucida=
+ Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size=
+: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" widt=
+h=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>      <td sty=
+le=3D"-webkit-font-smoothing: antialiased !important; border: 0 solid #dd=
+d; color: #525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucida=
+ Grande', 'Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 24=
+px; margin: 0; padding: 0; vertical-align: top" valign=3D"top">      Best=
+,      </td>      <td style=3D"-webkit-font-smoothing: antialiased !impor=
+tant; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida G=
+rande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; =
+margin: 0; padding: 0; vertical-align: top" width=3D"64" valign=3D"top"> =
+       <div>=C2=A0</div>      </td>    </tr>    <tr>      <td colspan=3D"=
+3" height=3D"12" style=3D"-webkit-font-smoothing: antialiased !important;=
+ border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande=
+', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; margi=
+n: 0; padding: 0; vertical-align: top" valign=3D"top">        <div>=C2=A0=
+</div>      </td>    </tr>  </tbody></table><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"600" style=3D"border-collapse: collap=
+se; font-size: 1em; min-width: 600px; width: 100%">  <tbody>    <tr>     =
+ <td style=3D"-webkit-font-smoothing: antialiased !important; border: 0 s=
+olid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma',=
+ Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; paddin=
+g: 0; vertical-align: top" width=3D"64" valign=3D"top">        <div>=C2=A0=
+</div>      </td>      <td style=3D"-webkit-font-smoothing: antialiased !=
+important; border: 0 solid #ddd; color: #525F7f !important; font-family: =
+'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; fo=
+nt-size: 16px; line-height: 24px; margin: 0; padding: 0; vertical-align: =
+top" valign=3D"top">      Stripe      </td>      <td style=3D"-webkit-fon=
+t-smoothing: antialiased !important; border: 0 solid #ddd; font-family: '=
+Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; fon=
+t-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top=
+" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>    </t=
+r>    <tr>      <td colspan=3D"3" height=3D"12" style=3D"-webkit-font-smo=
+othing: antialiased !important; border: 0 solid #ddd; font-family: 'Lucid=
+a Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-siz=
+e: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" val=
+ign=3D"top">        <div>=C2=A0</div>      </td>    </tr>  </tbody></tabl=
+e><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" s=
+tyle=3D"border-collapse: collapse; font-size: 1em; min-width: 600px; widt=
+h: 100%">  <tbody>    <tr>      <td style=3D"-webkit-font-smoothing: anti=
+aliased !important; border: 0 solid #ddd; font-family: 'Lucida Sans Unico=
+de', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line=
+-height: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" va=
+lign=3D"top">        <div>=C2=A0</div>      </td>      <td style=3D"-webk=
+it-font-smoothing: antialiased !important; border: 0 solid #ddd; color: #=
+525F7f !important; font-family: 'Lucida Sans Unicode', 'Lucida Grande', '=
+Tahoma', Verdana, sans-serif; font-size: 16px; line-height: 24px; margin:=
+ 0; padding: 0; vertical-align: top" valign=3D"top">      [0] You can con=
+tinue creating charges, but to comply with legal and regulatory requireme=
+nts, we will need you to go through this final piece of verification to e=
+nsure we can transfer future payments to your bank account.      </td>   =
+   <td style=3D"-webkit-font-smoothing: antialiased !important; border: 0=
+ solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma=
+', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; padd=
+ing: 0; vertical-align: top" width=3D"64" valign=3D"top">        <div>=C2=
+=A0</div>      </td>    </tr>    <tr>      <td colspan=3D"3" height=3D"12=
+" style=3D"-webkit-font-smoothing: antialiased !important; border: 0 soli=
+d #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Ve=
+rdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0; padding: =
+0; vertical-align: top" valign=3D"top">        <div>=C2=A0</div>      </t=
+d>    </tr>  </tbody></table><table border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"600" style=3D"border-collapse: collapse; font-size: =
+1em; min-width: 600px; width: 100%">  <tbody>    <tr>      <td style=3D"-=
+webkit-font-smoothing: antialiased !important; border: 0 solid #ddd; font=
+-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-=
+serif; font-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-=
+align: top" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      </=
+td>      <td style=3D"-webkit-font-smoothing: antialiased !important; bor=
+der: 0 solid #ddd; color: #525F7f !important; font-family: 'Lucida Sans U=
+nicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 16px;=
+ line-height: 24px; margin: 0; padding: 0; vertical-align: top" valign=3D=
+"top">      [1] <a href=3D"https://support.stripe.com/questions/troublesh=
+ooting-id-upload-for-identity-verification" rel=3D"noreferrer">https://su=
+pport.stripe.com/questions/troubleshooting-id-upload-for-identity-verific=
+ation</a>      </td>      <td style=3D"-webkit-font-smoothing: antialiase=
+d !important; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', '=
+Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-heigh=
+t: 1px; margin: 0; padding: 0; vertical-align: top" width=3D"64" valign=3D=
+"top">        <div>=C2=A0</div>      </td>    </tr>    <tr>      <td cols=
+pan=3D"3" height=3D"12" style=3D"-webkit-font-smoothing: antialiased !imp=
+ortant; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida=
+ Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px=
+; margin: 0; padding: 0; vertical-align: top" valign=3D"top">        <div=
+>=C2=A0</div>      </td>    </tr>  </tbody></table>          <table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" style=3D"border=
+-collapse: collapse; font-size: 1em; min-width: 600px; width: 100%">  <tb=
+ody>    <tr>      <td colspan=3D"3" height=3D"20" style=3D"-webkit-font-s=
+moothing: antialiased !important; border: 0 solid #ddd; font-family: 'Luc=
+ida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-s=
+ize: 1px; line-height: 1px; margin: 0; max-height: 1px; padding: 0; verti=
+cal-align: top" valign=3D"top">        <div>=C2=A0</div>      </td>    </=
+tr>    <tr>      <td style=3D"-webkit-font-smoothing: antialiased !import=
+ant; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Gr=
+ande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; m=
+argin: 0; max-height: 1px; padding: 0; vertical-align: top" width=3D"64" =
+valign=3D"top">        <div>=C2=A0</div>      </td>      <td colspan=3D"2=
+" height=3D"1" style=3D"-webkit-font-smoothing: antialiased !important; b=
+ackground-color: #e6ebf1; border: 0 solid #ddd; font-family: 'Lucida Sans=
+ Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px=
+; line-height: 1px; margin: 0; max-height: 1px; padding: 0; vertical-alig=
+n: top" bgcolor=3D"#e6ebf1" valign=3D"top">        <div>=C2=A0</div>     =
+ </td>      <td style=3D"-webkit-font-smoothing: antialiased !important; =
+border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande'=
+, 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin=
+: 0; max-height: 1px; padding: 0; vertical-align: top" width=3D"64" valig=
+n=3D"top">        <div>=C2=A0</div>      </td>    </tr>    <tr>      <td =
+colspan=3D"3" height=3D"31" style=3D"-webkit-font-smoothing: antialiased =
+!important; border: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lu=
+cida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; line-height:=
+ 1px; margin: 0; padding: 0; vertical-align: top" valign=3D"top">        =
+<div>=C2=A0</div>      </td>    </tr>    <tr>      <td style=3D"-webkit-f=
+ont-smoothing: antialiased !important; border: 0 solid #ddd; font-family:=
+ 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; f=
+ont-size: 1px; line-height: 1px; margin: 0; padding: 0; vertical-align: t=
+op" width=3D"64" valign=3D"top">        <div>=C2=A0</div>      </td>     =
+ <td style=3D"-webkit-font-smoothing: antialiased !important; border: 0 s=
+olid #ddd; color: #8898aa; font-family: 'Lucida Sans Unicode', 'Lucida Gr=
+ande', 'Tahoma', Verdana, sans-serif; font-size: 12px; line-height: 16px;=
+ margin: 0; padding: 0; vertical-align: top" valign=3D"top">        <span=
+ style=3D"-webkit-font-smoothing: antialiased !important; border: 0; colo=
+r: #8898aa; margin: 0; outline: 0 !important; padding: 0; text-decoration=
+: none !important">          Stripe, 510 Townsend Street, San Francisco, =
+CA 94103        </span>      </td>      <td style=3D"-webkit-font-smoothi=
+ng: antialiased !important; border: 0 solid #ddd; font-family: 'Lucida Sa=
+ns Unicode', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1=
+px; line-height: 1px; margin: 0; padding: 0; vertical-align: top" width=3D=
+"64" valign=3D"top">        <div>=C2=A0</div>      </td>    </tr>    <tr>=
+      <td colspan=3D"3" height=3D"64" style=3D"-webkit-font-smoothing: an=
+tialiased !important; border: 0 solid #ddd; font-family: 'Lucida Sans Uni=
+code', 'Lucida Grande', 'Tahoma', Verdana, sans-serif; font-size: 1px; li=
+ne-height: 1px; margin: 0; padding: 0; vertical-align: top" valign=3D"top=
+">        <div>=C2=A0</div>      </td>    </tr>  </tbody></table>        =
+          </td>                </tr>              </tbody>            </t=
+able>                      </td>        </tr>        <tr>          <td he=
+ight=3D"64" style=3D"-webkit-font-smoothing: antialiased !important; bord=
+er: 0 solid #ddd; font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'T=
+ahoma', Verdana, sans-serif; font-size: 1px; line-height: 1px; margin: 0;=
+ padding: 0; vertical-align: top" valign=3D"top">            <div>=C2=A0<=
+/div>          </td>        </tr>      </tbody>    </table></div>
+    <p dir=3D"ltr"></p>
+    <span style=3D"color:#FFFFFF" aria-hidden=3D"true">[M7MO3E-QK99]</spa=
+n>
+  </body>
+</html>
+
+----==_mimepart_5f05d825bae68_5f5ca5d03675b4--
