@@ -1,7 +1,0 @@
-username|s:6:"deliap";token|s:40:"24fbc5b672e772790b707b8dd655e44613284120";tokengui|s:20:"cwp_b51714d274413833";tokenuser|s:41:"447aea5b2ddea24f35c9033e490690b1:ltB7CYag";general|a:15:{s:6:"status";s:2:"OK";s:6:"domain";s:10:"deliap.com";s:5:"email";s:18:"arabmate@gmail.com";s:12:"package_name";s:7:"default";s:10:"ip_address";s:13:"94.75.212.170";s:8:"reseller";s:0:"";s:10:"setup_date";s:19:"2020-05-23 12:18:16";s:10:"package_id";s:1:"1";s:11:"last_access";s:19:"0000-00-00 00:00:00";s:8:"cryptpwd";i:1;s:14:"domainreseller";s:0:"";s:9:"viewtheme";i:0;s:9:"bandwidth";s:4:"7621";s:14:"pack_bandwidth";s:8:"10000000";s:5:"quote";s:26:"{
-    "status": "failed"
-}";}swuser|i:1;pmauser|s:25:"wOcTLmHzpK9oi9g1MXau7Q==
-";versioncwp|s:41:"<?php
-$webpanel_version = "0.9.8.997";
-?>";sess_pma|s:25:"wOcTLmHzpK9oi9g1MXau7Q==
-";license|i:1;myip|s:13:"94.128.72.210";
