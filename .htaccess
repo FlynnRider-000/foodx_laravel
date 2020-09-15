@@ -12,3 +12,37 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 Header set content-Security-Policy: upgrade-insecure-requests
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_value memory_limit 4G
+   php_value upload_max_filesize 12M
+   php_value post_max_size 12M
+   php_value max_execution_time 30
+   php_flag display_errors On
+   php_value date.timezone "Europe/London"
+   php_value error_reporting E_ALL & ~E_DEPRECATED & ~E_STRICT
+   php_value session.save_path "/tmp"
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value session.gc_maxlifetime 1440
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_value memory_limit 4G
+   php_value upload_max_filesize 12M
+   php_value post_max_size 12M
+   php_value max_execution_time 30
+   php_flag display_errors On
+   php_value date.timezone "Europe/London"
+   php_value error_reporting E_ALL & ~E_DEPRECATED & ~E_STRICT
+   php_value session.save_path "/tmp"
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value session.gc_maxlifetime 1440
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit

@@ -348,6 +348,92 @@ class AppSettingsTableSeeder extends Seeder
                 'key' => 'enable_version',
                 'value' => '1',
             ),
+
+            array(
+                'id' => 128,
+                'key' => 'default_currency_id',
+                'value' => '1',
+            ),
+            array(
+                'id' => 129,
+                'key' => 'default_currency_code',
+                'value' => 'USD',
+            ),
+            array(
+                'id' => 130,
+                'key' => 'default_currency_decimal_digits',
+                'value' => '2',
+            ),
+            array(
+                'id' => 131,
+                'key' => 'default_currency_rounding',
+                'value' => '0',
+            ),
+            array(
+                'id' => 132,
+                'key' => 'currency_right',
+                'value' => '0',
+            ),
+            array(
+                'id' => 133,
+                'key' => 'home_section_1',
+                'value' => 'search',
+            ),
+            array(
+                'id' => 134,
+                'key' => 'home_section_2',
+                'value' => 'slider',
+            ),
+            array(
+                'id' => 135,
+                'key' => 'home_section_3',
+                'value' => 'top_markets_heading',
+            ),
+            array(
+                'id' => 136,
+                'key' => 'home_section_4',
+                'value' => 'top_markets',
+            ),
+            array(
+                'id' => 137,
+                'key' => 'home_section_5',
+                'value' => 'trending_week_heading',
+            ),
+            array(
+                'id' => 138,
+                'key' => 'home_section_6',
+                'value' => 'trending_week',
+            ),
+            array(
+                'id' => 139,
+                'key' => 'home_section_7',
+                'value' => 'categories_heading',
+            ),
+            array(
+                'id' => 140,
+                'key' => 'home_section_8',
+                'value' => 'categories',
+            ),
+            array(
+                'id' => 141,
+                'key' => 'home_section_9',
+                'value' => 'popular_heading',
+            ),
+            array(
+                'id' => 142,
+                'key' => 'home_section_10',
+                'value' => 'popular',
+            ),
+            array(
+                'id' => 143,
+                'key' => 'home_section_11',
+                'value' => 'recent_reviews_heading',
+            ),
+            array(
+                'id' => 144,
+                'key' => 'home_section_12',
+                'value' => 'recent_reviews',
+            )
         ));
         
         

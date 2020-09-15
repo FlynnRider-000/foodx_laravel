@@ -58,6 +58,9 @@ Route::resource('product_reviews', 'API\ProductReviewAPIController');
 Route::resource('faqs', 'API\FaqAPIController');
 Route::resource('market_reviews', 'API\MarketReviewAPIController');
 Route::resource('currencies', 'API\CurrencyAPIController');
+Route::resource('slides', 'API\SlideAPIController')->except([
+    'show'
+]);
 
 Route::resource('option_groups', 'API\OptionGroupAPIController');
 

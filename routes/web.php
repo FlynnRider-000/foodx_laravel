@@ -152,7 +152,7 @@ Route::middleware('auth')->group(function () {
     ]);
 
     Route::resource('drivers', 'DriverController')->except([
-        'show','edit','update'
+        'show'
     ]);
 
     Route::resource('earnings', 'EarningController')->except([
@@ -185,6 +185,10 @@ Route::middleware('auth')->group(function () {
     Route::resource('message', 'MessageController');
     
     Route::resource('coupons', 'CouponController')->except([
+        'show'
+    ]);
+    Route::post('slides/remove-media','SlideController@removeMedia');
+    Route::resource('slides', 'SlideController')->except([
         'show'
     ]);
 });

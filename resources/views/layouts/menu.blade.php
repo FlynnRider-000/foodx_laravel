@@ -217,8 +217,8 @@
 @endcan
 
 @can('app-settings')
-    <li class="nav-item has-treeview {{ Request::is('settings/mobile*') ? 'menu-open' : '' }}">
-        <a href="#" class="nav-link {{ Request::is('settings/mobile*') ? 'active' : '' }}">
+    <li class="nav-item has-treeview {{ Request::is('settings/mobile*') || Request::is('slides*') ? 'menu-open' : '' }}">
+        <a href="#" class="nav-link {{ Request::is('settings/mobile*') || Request::is('slides*') ? 'active' : '' }}">
             @if($icons)<i class="nav-icon fa fa-mobile"></i>@endif
             <p>
                 {{trans('lang.mobile_menu')}}
@@ -236,6 +236,19 @@
                     @if($icons)<i class="nav-icon fa fa-pencil"></i> @endif <p>{{trans('lang.mobile_colors')}} <span class="right badge badge-danger">New</span> </p>
                 </a>
             </li>
+
+            <li class="nav-item">
+                <a href="{!! url('settings/mobile/home') !!}" class="nav-link {{  Request::is('settings/mobile/home*') ? 'active' : '' }}">
+                    @if($icons)<i class="nav-icon fa fa-home"></i> @endif <p>{{trans('lang.mobile_home')}}
+                        <span class="right badge badge-danger">New</span></p>
+                </a>
+            </li>
+
+            @can('slides.index')
+                <li class="nav-item">
+                    <a class="nav-link {{ Request::is('slides*') ? 'active' : '' }}" href="{!! route('slides.index') !!}">@if($icons)<i class="nav-icon fa fa-magic"></i>@endif<p>{{trans('lang.slide_plural')}} <span class="right badge badge-danger">New</span></p></a>
+                </li>
+            @endcan
         </ul>
 
     </li>

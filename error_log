@@ -1,1 +1,8 @@
 [01-Sep-2020 13:28:35 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting '{' in /home3/foodx/public_html/vendor/symfony/polyfill-php80/bootstrap.php on line 23
+[15-Sep-2020 10:54:49 America/Chicago] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 16777216 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[15-Sep-2020 11:38:14 America/Chicago] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 16777216 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[15-Sep-2020 11:48:37 America/Chicago] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 16777216 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[15-Sep-2020 11:56:39 America/Chicago] PHP Fatal error:  Allowed memory size of 1610612736 bytes exhausted (tried to allocate 16777216 bytes) in phar:///opt/cpanel/composer/bin/composer/src/Composer/DependencyResolver/RuleSet.php on line 90
+[15-Sep-2020 13:00:42 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting '{' in /home3/foodx/public_html/vendor/symfony/polyfill-php80/bootstrap.php on line 23
+[15-Sep-2020 13:01:38 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting '{' in /home3/foodx/public_html/vendor/symfony/polyfill-php80/bootstrap.php on line 23
+[15-Sep-2020 13:08:54 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting '{' in /home3/foodx/public_html/vendor/symfony/polyfill-php80/bootstrap.php on line 23

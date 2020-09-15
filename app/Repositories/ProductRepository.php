@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: ProductRepository.php
- * Last modified: 2020.05.26 at 17:39:29
+ * Last modified: 2020.06.07 at 07:02:57
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *
@@ -65,7 +65,9 @@ class ProductRepository extends BaseRepository implements CacheableInterface
     {
         $products = [];
         foreach ($this->all() as $model) {
+            if(!empty($model->market)){
             $products[$model->market->name][$model->id] = $model->name;
+        }
         }
         return $products;
     }

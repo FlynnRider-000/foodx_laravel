@@ -333,6 +333,13 @@ class OrderAPIController extends Controller
                 if (isset($input['order_status_id']) && $input['order_status_id'] != $oldOrder->order_status_id) {
                     Notification::send([$order->user], new StatusChangedOrder($order));
                 }
+
+                if (isset($input['driver_id']) && ($input['driver_id'] != $oldOrder['driver_id'])) {
+                    $driver = $this->userRepository->findWithoutFail($input['driver_id']);
+                    if (!empty($driver)) {
+                        Notification::send([$driver], new AssignedOrder($order));
+                    }
+                }
             }
 
         } catch (ValidatorException $e) {
