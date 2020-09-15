@@ -14,6 +14,7 @@ use App\Criteria\Products\NearCriteria;
 use App\Criteria\Products\ProductsOfCategoriesCriteria;
 use App\Criteria\Products\ProductsOfFieldsCriteria;
 use App\Criteria\Products\TrendingWeekCriteria;
+use App\Criteria\Products\ProductsOfMarketCriteria;
 use App\Criteria\Products\ProductsByPriorityCriteria;
 use App\Http\Controllers\Controller;
 use App\Models\Product;
@@ -65,6 +66,7 @@ class ProductAPIController extends Controller
         try{
             $this->productRepository->pushCriteria(new RequestCriteria($request));
             $this->productRepository->pushCriteria(new LimitOffsetCriteria($request));
+            $this->productRepository->pushCriteria(new ProductsOfCategoriesCriteria($request));
             $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
             $this->productRepository->pushCriteria(new ProductsByPriorityCriteria($request));
             if ($request->get('trending', null) == 'week') {
@@ -72,9 +74,6 @@ class ProductAPIController extends Controller
             } else {
                 $this->productRepository->pushCriteria(new NearCriteria($request));
             }
-
-//            $this->productRepository->orderBy('closed');
-//            $this->productRepository->orderBy('area');
             $products = $this->productRepository->all();
 
         } catch (RepositoryException $e) {
@@ -104,7 +103,6 @@ class ProductAPIController extends Controller
         } catch (RepositoryException $e) {
             return $this->sendError($e->getMessage());
         }
-
         return $this->sendResponse($products->toArray(), 'Products retrieved successfully');
     }
 

@@ -170,3 +170,4 @@
 [02-Sep-2020 12:08:47 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Controller as Controller because the name is already in use in /home3/foodx/public_html/app/Http/Controllers/API/CategoryAPIController.php on line 12
 [02-Sep-2020 12:11:38 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Controller as Controller because the name is already in use in /home3/foodx/public_html/app/Http/Controllers/API/CategoryAPIController.php on line 12
 [02-Sep-2020 12:11:48 UTC] PHP Fatal error:  Cannot use App\Http\Controllers\Controller as Controller because the name is already in use in /home3/foodx/public_html/app/Http/Controllers/API/CategoryAPIController.php on line 12
+[14-Sep-2020 21:58:47 UTC] PHP Fatal error:  Cannot use App\Criteria\Products\ProductsOfCategoriesCriteria as ProductsOfCategoriesCriteria because the name is already in use in /home3/foodx/public_html/app/Http/Controllers/API/ProductAPIController.php on line 17
