@@ -83,7 +83,7 @@ class CouponController extends Controller
     public function create()
     {
         $this->productRepository->pushCriteria(new ProductsOfUserCriteria(auth()->id()));
-        $product = $this->productRepository->groupedByMarkets();
+        $product = $this->productRepository->pluck('name', 'id');
 
         $this->marketRepository->pushCriteria(new MarketsOfUserCriteria(auth()->id()));
         $this->marketRepository->pushCriteria(new ActiveCriteria());
@@ -184,7 +184,7 @@ class CouponController extends Controller
             return redirect(route('coupons.index'));
         }
         $this->productRepository->pushCriteria(new ProductsOfUserCriteria(auth()->id()));
-        $product = $this->productRepository->groupedByMarkets();
+        $product = $this->productRepository->pluck('name', 'id');
 
         $this->marketRepository->pushCriteria(new MarketsOfUserCriteria(auth()->id()));
         $this->marketRepository->pushCriteria(new ActiveCriteria());
