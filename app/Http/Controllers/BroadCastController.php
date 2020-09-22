@@ -32,7 +32,7 @@ class BroadCastController extends Controller
     {
         $message = $request->input('message');
         if ($message != '') {
-            $groupName = "DeliapBroadCastDeviceGrps";
+            $groupName = "DeliapBroadCastDeviceGroup";
             $tokens = explode(',', setting('firebase_device_tokens'));
             $tokenCnt = ceil(count($tokens) / 100);
             $notifKeys = explode(',', setting('firebase_notification_group_key'));
@@ -89,8 +89,11 @@ class BroadCastController extends Controller
                         "to" => $newNotifKeys[$i],
                         "notification" => [
                             "title" => $message,
-                            "text" => "",
-                            "sound" => "default",
+                            "body" => "",
+                            "icon" => "",
+                            "click_action" => "FLUTTER_NOTIFICATION_CLICK",
+                            "id" => "1",
+                            "status" => "done",
                         ],
                         "data" => [
                             "title" => $message,
