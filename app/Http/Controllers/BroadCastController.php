@@ -32,13 +32,16 @@ class BroadCastController extends Controller
     {
         $message = $request->input('message');
         if ($message != '') {
-            $groupName = "DeliapBroadCastDeviceGroup";
+            $groupName = "DeliapBroadCastDeviceGroup0";
             $tokens = explode(',', setting('firebase_device_tokens'));
             $tokenCnt = ceil(count($tokens) / 100);
             $notifKeys = explode(',', setting('firebase_notification_group_key'));
             if($tokenCnt != 1 || $tokens[0] != '') {
                 for($i = 0; $i < $tokenCnt; $i++) {
                     $tempTokens = array_slice($tokens, $i * 100, 100);
+                    $tmpTokens = array_values(array_filter($tempTokens, function($el) {
+                        return $el != '';
+                    }));
 
                     $tempGroupName = $groupName . $i;
                     $response = $this->client->post('https://fcm.googleapis.com/fcm/notification', [
@@ -51,7 +54,7 @@ class BroadCastController extends Controller
                             'operation' => 'remove',
                             'notification_key_name' => $tempGroupName,
                             'notification_key' => $notifKeys[$i],
-                            'registration_ids' => $tempTokens
+                            'registration_ids' => $tmpTokens
                         ])
                     ]);
                 }
@@ -63,6 +66,9 @@ class BroadCastController extends Controller
             $newNotifKeys = [];
             for($i = 0 ; $i < $newTokenCnt; $i++) {
                 $tempTokens = array_slice($newTokens, $i * 100, 100);
+                $tmpTokens = array_values(array_filter($tempTokens, function($el) {
+                    return $el != '';
+                }));
                 $tempGroupName = $groupName . $i;
                 $response = $this->client->post('https://fcm.googleapis.com/fcm/notification', [
                     'headers' => [
@@ -73,7 +79,7 @@ class BroadCastController extends Controller
                     'body' => json_encode([
                         'operation' => 'create',
                         'notification_key_name' => $tempGroupName,
-                        'registration_ids' => $tempTokens
+                        'registration_ids' => $tmpTokens
                     ])
                 ]);
 
