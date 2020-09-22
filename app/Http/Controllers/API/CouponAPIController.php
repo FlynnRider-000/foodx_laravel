@@ -69,7 +69,7 @@ class CouponAPIController extends Controller
             return $this->sendResponse([], 'Coupons retrieved successfully');
         } else {
             $coupons = $this->couponRepository->all();
-            return $this->sendResponse($history->toArray(), 'Coupons retrieved successfully');
+            return $this->sendResponse($coupons->toArray(), 'Coupons retrieved successfully');
         }
     }
 
