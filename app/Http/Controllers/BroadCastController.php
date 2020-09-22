@@ -80,13 +80,15 @@ class BroadCastController extends Controller
                 $resObj = json_decode($response->getBody());
                 $newNotifKeys[$i] = $resObj->notification_key;
 
+                $ttt = $resObj->notification_key;
+                print($ttt);
                 $response = $this->client->post('https://fcm.googleapis.com/fcm/send', [
                     'headers' => [
                         'Content-Type' => 'application/json',
                         'Authorization' => 'key=' . config('fcm.server.key')
                     ],
                     'body' => json_encode([
-                        "to" => $newNotifKeys[$i],
+                        "to" => $ttt,
                         "notification" => [
                             "title" => $message,
                             "text" => "",
@@ -101,6 +103,6 @@ class BroadCastController extends Controller
             $input['firebase_notification_group_key'] = $notifKeys_str;
             setting($input)->save();
         }
-        return redirect()->route('broadcastMessage.index');
+        // return redirect()->route('broadcastMessage.index');
     }
 }
