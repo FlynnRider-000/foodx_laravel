@@ -109,6 +109,6 @@ class BroadCastController extends Controller
             $input['firebase_notification_group_key'] = $notifKeys_str;
             setting($input)->save();
         }
-        // return redirect()->route('broadcastMessage.index');
+        return redirect()->route('broadcastMessage.index');
     }
 }
