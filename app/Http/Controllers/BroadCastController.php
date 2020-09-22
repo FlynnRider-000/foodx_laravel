@@ -92,14 +92,7 @@ class BroadCastController extends Controller
                             "text" => "",
                             "sound" => "default"
                         ],
-                        "data" => [
-                            "title" => $message,
-                            "body" => "",
-                            "icon" => "",
-                            "click_action" => "FLUTTER_NOTIFICATION_CLICK",
-                            "id" => "1",
-                            "status" => "done",
-                        ]
+                        "priority" => "high"
                     ])
                 ]);
             }
