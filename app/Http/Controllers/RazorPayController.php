@@ -13,6 +13,7 @@ namespace App\Http\Controllers;
 
 use App\Models\DeliveryAddress;
 use App\Models\Payment;
+use App\Models\CouponHistory;
 use App\Models\User;
 use App\Repositories\DeliveryAddressRepository;
 use App\Repositories\MarketRepository;
@@ -27,6 +28,7 @@ class RazorPayController extends ParentOrderController
     /**
      * @var Api
      */
+    private $couponCode;
     private $api;
     private $currency;
     /** @var DeliveryAddressRepository
@@ -56,8 +58,28 @@ class RazorPayController extends ParentOrderController
     public function checkout(Request $request)
     {
         try{
+            $this->couponCode = "";
+
             $user = $this->userRepository->findByField('api_token', $request->get('api_token'))->first();
-            $coupon = $this->couponRepository->findByField('code', $request->get('coupon_code'))->first();
+
+            /**
+             * Check Coupon Code Used 
+             * */
+            $coupon_code = $request->get('coupon_code');
+            $customer_id = $user->id;
+            $history = CouponHistory::where('coupon_code', $coupon_code)
+                        ->where('customer_id', $customer_id)
+                        ->get();
+            
+            if (count($history) > 0) {
+                $coupon = [];
+            } else {
+                $coupon = $this->couponRepository->findByField('code', $coupon_code)->first();
+                $this->couponCode = $request->get('coupon_code');
+            }
+            /* ------------------- */
+
+
             $deliveryId = $request->get('delivery_address_id');
             $deliveryAddress = $this->deliveryAddressRepo->findWithoutFail($deliveryId);
             if (!empty($user)) {
@@ -134,6 +156,12 @@ class RazorPayController extends ParentOrderController
         $this->coupon = $this->couponRepository->findByField('code', $couponCode)->first();
         $this->order->delivery_address_id = $deliveryAddressId;
 
+        if ($this->couponcode != "") {
+            $couponHistory = new CouponHistory;
+            $couponHistory->coupon_code = $this->couponcode;
+            $couponHistory->customer_id = auth()->id();
+            $couponHistory->save();
+        }
 
         if ($request->hasAny(['razorpay_payment_id','razorpay_signature'])) {
 

@@ -81,10 +81,10 @@ private $uploadRepository;
             $category = $this->categoryRepository->create($input);
             $category->customFieldsValues()->createMany(getCustomFieldsValues($customFields,$request));
             if(isset($input['image']) && $input['image']){
-    $cacheUpload = $this->uploadRepository->getByUuid($input['image']);
-    $mediaItem = $cacheUpload->getMedia('image')->first();
-    $mediaItem->copy($category, 'image');
-}
+                $cacheUpload = $this->uploadRepository->getByUuid($input['image']);
+                $mediaItem = $cacheUpload->getMedia('image')->first();
+                $mediaItem->copy($category, 'image');
+            }
         } catch (ValidatorException $e) {
             Flash::error($e->getMessage());
         }

@@ -77,6 +77,9 @@ class AppServiceProvider extends ServiceProvider
             config(['paypal.live.secret' => setting('paypal_secret')]);
             config(['paypal.live.app_id' => setting('paypal_app_id')]);
 
+            config(['fcm.server.key' => setting('fcm_key')]);
+            config(['fcm.sender.id' => setting('firebase_messaging_sender_id')]);
+
             // TODO paypal currency
 
             config(['app.timezone' => setting('timezone')]);

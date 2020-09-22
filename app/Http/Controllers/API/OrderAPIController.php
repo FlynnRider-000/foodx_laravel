@@ -15,6 +15,7 @@ use App\Criteria\Orders\OrdersOfUserCriteria;
 use App\Events\OrderChangedEvent;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
+use App\Models\CouponHistory;
 use App\Notifications\NewOrder;
 use App\Notifications\StatusChangedOrder;
 use App\Repositories\CartRepository;
@@ -298,6 +299,13 @@ class OrderAPIController extends Controller
             
             Notification::send($order->productOrders[0]->product->market->users, new NewOrder($order));
 
+            $input = $request->all();
+            if ($input['isCouponUsed'] == 1) {
+                $couponHistory = new CouponHistory;
+                $couponHistory->coupon_code = $input['usedCoupon'];
+                $couponHistory->customer_id = auth()->id();
+                $couponHistory->save();
+            }
         } catch (ValidatorException $e) {
             return $this->sendError($e->getMessage());
         }

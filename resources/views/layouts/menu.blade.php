@@ -21,6 +21,10 @@
     </li>
 @endcan
 
+<li class="nav-item">
+    <a class="nav-link {{ Request::is('broadcast*') ? 'active' : '' }}" href="{!! route('broadcastMessage.index') !!}">@if($icons)<i class="nav-icon fa fa-wifi"></i>@endif<p>BroadCast Message</p></a>
+</li>
+
 @can('markets.index')
     <li class="nav-item has-treeview {{ (Request::is('markets*') || Request::is('requestedMarkets*') || Request::is('galleries*') || Request::is('marketReviews*')) && !Request::is('marketsPayouts*') ? 'menu-open' : '' }}">
         <a href="#" class="nav-link {{ (Request::is('markets*') || Request::is('requestedMarkets*') || Request::is('galleries*') || Request::is('marketReviews*')) && !Request::is('marketsPayouts*')? 'active' : '' }}"> @if($icons)

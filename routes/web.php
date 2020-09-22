@@ -179,17 +179,17 @@ Route::middleware('auth')->group(function () {
 
     
     Route::get('notification_check/getStatus', 'NotificationCheckController@index');
-
     Route::get('notification_check/setRead', 'NotificationCheckController@read');
-
-    Route::resource('message', 'MessageController');
     
     Route::resource('coupons', 'CouponController')->except([
         'show'
     ]);
+
     Route::post('slides/remove-media','SlideController@removeMedia');
     Route::resource('slides', 'SlideController')->except([
         'show'
     ]);
-});
 
+    Route::get('broadcastMessage/index', 'BroadCastController@index')->name('broadcastMessage.index');
+    Route::get('broadcastMessage/send', 'BroadCastController@send')->name('broadcastMessage.send');
+});
