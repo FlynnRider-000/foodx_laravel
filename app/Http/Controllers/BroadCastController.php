@@ -32,7 +32,7 @@ class BroadCastController extends Controller
     {
         $message = $request->input('message');
         if ($message != '') {
-            $groupName = "DeliapBroadCastDeviceGroup0";
+            $groupName = "DeliapDeviceGroup";
             $tokens = explode(',', setting('firebase_device_tokens'));
             $tokenCnt = ceil(count($tokens) / 100);
             $notifKeys = explode(',', setting('firebase_notification_group_key'));
