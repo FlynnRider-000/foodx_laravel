@@ -89,11 +89,8 @@ class BroadCastController extends Controller
                         "to" => $newNotifKeys[$i],
                         "notification" => [
                             "title" => $message,
-                            "body" => "",
-                            "icon" => "",
-                            "click_action" => "FLUTTER_NOTIFICATION_CLICK",
-                            "id" => "1",
-                            "status" => "done",
+                            "text" => "",
+                            "sound" => "default"
                         ],
                         "data" => [
                             "title" => $message,
