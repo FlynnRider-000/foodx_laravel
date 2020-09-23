@@ -59,7 +59,7 @@ $(document).ready(function () {
 
     $.ajax({
         method: "GET",
-        url: '/notification_check/getStatus',
+        url: '/public/notification_check/getStatus',
         success: function(data){
             if(data == 1){
                 $("#newOrderAlert").css("display","block");
@@ -177,7 +177,7 @@ channel.bind('App\\Events\\NewOrderAdded', function(data) {
 $(".alertClose").click(function(){
     $.ajax({
         method: "GET",
-        url: '/notification_check/setRead',
+        url: '/public/notification_check/setRead',
         success: function(data){
             if(data == 1)
                 $("#newOrderAlert").css("display","none");
