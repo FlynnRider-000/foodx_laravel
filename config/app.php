@@ -169,7 +169,7 @@ return [
         App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        LaravelFCM\FCMServiceProvider::class,
 
     ],
 
@@ -225,8 +225,8 @@ return [
         'DataTables' => Yajra\DataTables\Facades\DataTables::class,
         'PDF' => Barryvdh\DomPDF\Facade::class,
         'HTMLFieldGenerator' => InfyOm\Generator\Utils\HTMLFieldGenerator::class,
-//        'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
-
+        // 'PayPal' => Srmklive\PayPal\Facades\PayPal::class,
+        'FCM'      => LaravelFCM\Facades\FCM::class,
     ],
 
 ];

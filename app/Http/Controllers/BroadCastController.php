@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Repositories\UserRepository;
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
-
+use LaravelFCM\Message\PayloadNotificationBuilder;
+use LaravelFCM\Message\Topics;
+use FCM;
 class BroadCastController extends Controller
 {
     /** @var  UserRepository */
@@ -31,6 +33,7 @@ class BroadCastController extends Controller
     public function send(Request $request)
     {
         $message = $request->input('message');
+        /*
         if ($message != '') {
             $groupName = "DeliapDeviceGroup";
             $tokens = explode(',', setting('firebase_device_tokens'));
@@ -108,7 +111,17 @@ class BroadCastController extends Controller
             $input['firebase_device_tokens'] = $newToken_str;
             $input['firebase_notification_group_key'] = $notifKeys_str;
             setting($input)->save();
-        }
+        } */
+        $notificationBuilder = new PayloadNotificationBuilder($message);
+        $notificationBuilder->setBody('')
+                            ->setSound('default');
+
+        $notification = $notificationBuilder->build();
+
+        $topic = new Topics();
+        $topic->topic('broadCastMessage');
+
+        $topicResponse = FCM::sendToTopic($topic, null, $notification, null);
         return redirect()->route('broadcastMessage.index');
     }
 }
