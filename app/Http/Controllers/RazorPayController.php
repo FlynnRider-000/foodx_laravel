@@ -156,9 +156,9 @@ class RazorPayController extends ParentOrderController
         $this->coupon = $this->couponRepository->findByField('code', $couponCode)->first();
         $this->order->delivery_address_id = $deliveryAddressId;
 
-        if ($this->couponcode != "") {
+        if ($this->couponCode != "") {
             $couponHistory = new CouponHistory;
-            $couponHistory->coupon_code = $this->couponcode;
+            $couponHistory->coupon_code = $this->couponCode;
             $couponHistory->customer_id = auth()->id();
             $couponHistory->save();
         }
