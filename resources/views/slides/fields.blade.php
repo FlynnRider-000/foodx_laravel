@@ -211,7 +211,7 @@
     <div class="form-group row ">
         {!! Form::label('market_id', trans("lang.slide_market_id"),['data-empty'=>trans("lang.slide_market_id_placeholder"),'class' => 'col-3 control-label text-right']) !!}
         <div class="col-9">
-            {!! Form::select('market_id', $market, null, ['class' => 'select2 not-required form-control']) !!}
+            {!! Form::select('market_id', $market, null, ['data-empty'=>trans("lang.slide_market_id_placeholder"),'class' => 'select2 not-required form-control']) !!}
             <div class="form-text text-muted">{{ trans("lang.slide_market_id_help") }}</div>
         </div>
     </div>
