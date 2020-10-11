@@ -152,7 +152,7 @@ class OrderController extends Controller
         }
 
         $total = $subtotal + $order['delivery_fee'];
-        $taxAmount = $total * $order['tax'] / 100;
+        $taxAmount = $subtotal * $order['tax'] / 100;
         $total += $taxAmount;
         $productOrderDataTable->id = $id;
 
