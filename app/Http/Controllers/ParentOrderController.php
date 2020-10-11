@@ -164,7 +164,7 @@ abstract class ParentOrderController extends Controller
             } else {
                 $this->order->tax = $carts[0]->product->market->default_tax;
             }
-            $this->total += $this->total * ($this->order->tax / 100);
+            $this->total += $this->subtotal * ($this->order->tax / 100);
 
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
