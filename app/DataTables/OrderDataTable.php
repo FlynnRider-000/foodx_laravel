@@ -179,16 +179,27 @@ class OrderDataTable extends DataTable
                 ->select('orders.*');
         } else if (auth()->user()->hasRole('client')) {
             return $model->newQuery()->with("user")->with("orderStatus")->with('payment')
+                ->join("product_orders", "orders.id", "=", "product_orders.order_id")
+                ->join("products", "products.id", "=", "product_orders.product_id")
+                ->join("markets", "markets.id", "=", "products.market_id")
                 ->where('orders.user_id', auth()->id())
                 ->groupBy('orders.id')
-                ->select('orders.*');
+                ->select('orders.*', 'markets.name');;
         } else if (auth()->user()->hasRole('driver')) {
             return $model->newQuery()->with("user")->with("orderStatus")->with('payment')
+                ->join("product_orders", "orders.id", "=", "product_orders.order_id")
+                ->join("products", "products.id", "=", "product_orders.product_id")
+                ->join("markets", "markets.id", "=", "products.market_id")
                 ->where('orders.driver_id', auth()->id())
                 ->groupBy('orders.id')
-                ->select('orders.*');
+                ->select('orders.*', 'markets.name');;
         } else {
-            return $model->newQuery()->with("user")->with("orderStatus")->with('payment');
+            return $model->newQuery()->with("user")->with("orderStatus")->with('payment')
+                ->join("product_orders", "orders.id", "=", "product_orders.order_id")
+                ->join("products", "products.id", "=", "product_orders.product_id")
+                ->join("markets", "markets.id", "=", "products.market_id")
+                ->groupBy('orders.id')
+                ->select('orders.*', 'markets.name');;
         }
 
     }
