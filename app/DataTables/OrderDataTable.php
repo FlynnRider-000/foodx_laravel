@@ -49,6 +49,9 @@ class OrderDataTable extends DataTable
             ->editColumn('payment.status', function ($order) {
                 return getPayment($order->payment,'status');
             })
+            ->editColumn('payment.price', function ($order) {
+                return getPriceColumn($order->payment, 'price');
+            })
             ->editColumn('active', function ($product) {
                 return getBooleanColumn($product, 'active');
             })
@@ -100,6 +103,11 @@ class OrderDataTable extends DataTable
                 'name' => 'payment.status',
                 'title' => trans('lang.payment_status'),
 
+            ],
+            [
+                'data' => 'payment.price',
+                'name' => 'payment.price',
+                'title' => 'Total',
             ],
             [
                 'data' => 'payment.method',
