@@ -87,6 +87,11 @@ class OrderDataTable extends DataTable
 
             ],
             [
+                'data' => 'markets.name',
+                'name' => 'markets.name',
+                'title' => trans('lang.market_name'),
+            ],
+            [
                 'data' => 'tax',
                 'title' => trans('lang.order_tax'),
                 'searchable' => false,
@@ -99,15 +104,15 @@ class OrderDataTable extends DataTable
 
             ],
             [
+                'data' => 'payment.price',
+                'name' => 'payment.price',
+                'title' => 'Total',
+            ],
+            [
                 'data' => 'payment.status',
                 'name' => 'payment.status',
                 'title' => trans('lang.payment_status'),
 
-            ],
-            [
-                'data' => 'payment.price',
-                'name' => 'payment.price',
-                'title' => 'Total',
             ],
             [
                 'data' => 'payment.method',
@@ -158,7 +163,12 @@ class OrderDataTable extends DataTable
     public function query(Order $model)
     {
         if (auth()->user()->hasRole('admin')) {
-            return $model->newQuery()->with("user")->with("orderStatus")->with('payment');
+            return $model->newQuery()->with("user")->with("orderStatus")->with('payment')
+                ->join("product_orders", "orders.id", "=", "product_orders.order_id")
+                ->join("products", "products.id", "=", "product_orders.product_id")
+                ->join("markets", "markets.id", "=", "products.market_id")
+                ->groupBy('orders.id')
+                ->select('orders.*');
         } else if (auth()->user()->hasRole('manager')) {
             return $model->newQuery()->with("user")->with("orderStatus")->with('payment')
                 ->join("product_orders", "orders.id", "=", "product_orders.order_id")
