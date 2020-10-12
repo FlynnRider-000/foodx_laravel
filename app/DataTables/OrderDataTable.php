@@ -174,6 +174,7 @@ class OrderDataTable extends DataTable
                 ->join("product_orders", "orders.id", "=", "product_orders.order_id")
                 ->join("products", "products.id", "=", "product_orders.product_id")
                 ->join("user_markets", "user_markets.market_id", "=", "products.market_id")
+                ->join("markets", "markets.id", "=", "products.market_id")
                 ->where('user_markets.user_id', auth()->id())
                 ->groupBy('orders.id')
                 ->select('orders.*');
