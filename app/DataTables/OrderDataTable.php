@@ -168,8 +168,7 @@ class OrderDataTable extends DataTable
                 ->join("products", "products.id", "=", "product_orders.product_id")
                 ->join("markets", "markets.id", "=", "products.market_id")
                 ->groupBy('orders.id')
-                ->select('orders.*')
-                ->select('markets.name');
+                ->select('orders.*', 'markets.name');
         } else if (auth()->user()->hasRole('manager')) {
             return $model->newQuery()->with("user")->with("orderStatus")->with('payment')
                 ->join("product_orders", "orders.id", "=", "product_orders.order_id")
