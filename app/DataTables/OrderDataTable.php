@@ -87,8 +87,8 @@ class OrderDataTable extends DataTable
 
             ],
             [
-                'data' => 'markets.name',
-                'name' => 'markets.name',
+                'data' => 'name',
+                'name' => 'name',
                 'title' => trans('lang.market_name'),
             ],
             [
