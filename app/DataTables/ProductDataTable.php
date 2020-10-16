@@ -52,6 +52,9 @@ class ProductDataTable extends DataTable
             ->editColumn('featured', function ($product) {
                 return getBooleanColumn($product, 'featured');
             })
+            ->editColumn('out_of_stock', function ($product) {
+                return getBooleanColumn($product, 'out_of_stock');
+            })
             ->addColumn('action', 'products.datatables_actions')
             ->rawColumns(array_merge($columns, ['action']));
 
@@ -148,6 +151,10 @@ class ProductDataTable extends DataTable
                 'data' => 'featured',
                 'title' => trans('lang.product_featured'),
 
+            ],
+            [
+                'data' => 'out_of_stock',
+                'title' => 'Out of Stock',
             ],
             [
                 'data' => 'priority',

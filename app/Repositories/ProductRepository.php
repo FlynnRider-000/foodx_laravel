@@ -38,6 +38,7 @@ class ProductRepository extends BaseRepository implements CacheableInterface
         'capacity',
         'package_items_count',
         'deliverable',
+        'out_of_stock',
         'unit',
         'featured',
         'market_id',

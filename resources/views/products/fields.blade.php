@@ -191,6 +191,17 @@
         </div>
     </div>
 
+    <!-- 'Boolean out_of_stock Field' -->
+    <div class="form-group row ">
+        {!! Form::label('out_of_stock', 'Out of Stock',['class' => 'col-3 control-label text-right']) !!}
+        <div class="checkbox icheck">
+            <label class="col-9 ml-2 form-check-inline">
+                {!! Form::hidden('out_of_stock', 0) !!}
+                {!! Form::checkbox('out_of_stock', 1, null) !!}
+            </label>
+        </div>
+    </div>
+
 </div>
 @if($customFields)
     <div class="clearfix"></div>

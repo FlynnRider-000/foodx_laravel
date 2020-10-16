@@ -67,6 +67,7 @@ class Product extends Model implements HasMedia
         'package_items_count',
         'unit',
         'featured',
+        'out_of_stock',
         'priority',
         'deliverable',
         'market_id',
@@ -88,6 +89,7 @@ class Product extends Model implements HasMedia
         'unit' => 'string',
         'featured' => 'boolean',
         'deliverable' => 'boolean',
+        'out_of_stock' => 'boolean',
         'market_id' => 'integer',
         'category_id' => 'double'
     ];
