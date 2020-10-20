@@ -67,7 +67,7 @@ class ProductAPIController extends Controller
             $this->productRepository->pushCriteria(new RequestCriteria($request));
             $this->productRepository->pushCriteria(new LimitOffsetCriteria($request));
             $this->productRepository->pushCriteria(new ProductsOfCategoriesCriteria($request));
-            $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
+            // $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
             $this->productRepository->pushCriteria(new ProductsByPriorityCriteria($request));
             if ($request->get('trending', null) == 'week') {
                 $this->productRepository->pushCriteria(new TrendingWeekCriteria($request));
@@ -95,7 +95,7 @@ class ProductAPIController extends Controller
         try{
             $this->productRepository->pushCriteria(new RequestCriteria($request));
             $this->productRepository->pushCriteria(new LimitOffsetCriteria($request));
-            $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
+            // $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
             $this->productRepository->pushCriteria(new ProductsOfCategoriesCriteria($request));
             $this->productRepository->pushCriteria(new ProductsByPriorityCriteria($request));
             $products = $this->productRepository->all();
