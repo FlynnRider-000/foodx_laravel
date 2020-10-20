@@ -71,10 +71,9 @@ class ProductAPIController extends Controller
             $this->productRepository->pushCriteria(new ProductsByPriorityCriteria($request));
             if ($request->get('trending', null) == 'week') {
                 $this->productRepository->pushCriteria(new TrendingWeekCriteria($request));
+            } else {
+                $this->productRepository->pushCriteria(new NearCriteria($request));
             }
-            // } else {
-            //     $this->productRepository->pushCriteria(new NearCriteria($request));
-            // }
             $products = $this->productRepository->all();
 
         } catch (RepositoryException $e) {

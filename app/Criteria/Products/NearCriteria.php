@@ -45,11 +45,12 @@ class NearCriteria implements CriteriaInterface
             $areaLat = $this->request->get('areaLat');
             $areaLon = $this->request->get('areaLon');
 
-            return $model->join('markets', 'markets.id', '=', 'products.market_id')->select(DB::raw("SQRT(
+            return $model->join('markets', 'markets.id', '=', 'products.market_id')
+            /*->select(DB::raw("SQRT(
             POW(69.1 * (markets.latitude - $myLat), 2) +
             POW(69.1 * ($myLon - markets.longitude) * COS(markets.latitude / 57.3), 2)) AS distance, SQRT(
             POW(69.1 * (markets.latitude - $areaLat), 2) +
-            POW(69.1 * ($areaLon - markets.longitude) * COS(markets.latitude / 57.3), 2)) AS area"), "products.*")
+            POW(69.1 * ($areaLon - markets.longitude) * COS(markets.latitude / 57.3), 2)) AS area"), "products.*")*/
                 ->groupBy("products.id")
                 ->where('markets.active', '1')
                 ->orderBy('closed')
