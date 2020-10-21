@@ -35,6 +35,9 @@ class UserDataTable extends DataTable
             ->editColumn('email', function ($user) {
                 return getEmailColumn($user, 'email');
             })
+            ->editColumn('phone_verified', function ($user) {
+                return getBooleanColumn($user, 'phone_verified');
+            })
             ->editColumn('avatar', function ($user) {
                 return getMediaColumn($user, 'avatar', 'img-circle elevation-2');
             })
@@ -103,6 +106,10 @@ class UserDataTable extends DataTable
                 'title' => trans('lang.user_role_id'),
                 'orderable' => false, 'searchable' => false,
 
+            ],
+            [
+                'data' => 'phone_verified',
+                'title' => 'PhoneVerified',
             ],
             [
                 'data' => 'updated_at',

@@ -276,12 +276,9 @@ class OrderAPIController extends Controller
             Log::info($input['products']);
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;
-                $amount += $productOrder['price'] * $productOrder['quantity'];
                 $this->productOrderRepository->create($productOrder);
             }
-            $amount += $amount * $order->tax / 100;
-            $amount += $order->delivery_fee;
-            $amountWithTax = $amount;
+            $amountWithTax = $input['total'];
             $payment = $this->paymentRepository->create([
                 "user_id" => $input['user_id'],
                 "description" => trans("lang.payment_order_waiting"),

@@ -51,6 +51,7 @@ class User extends Authenticatable implements HasMedia
         'name',
         'email',
         'password',
+        'phone_verified',
         'api_token',
         'device_token',
         'notification_exist',
