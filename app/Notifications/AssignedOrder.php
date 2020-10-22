@@ -60,11 +60,13 @@ class AssignedOrder extends Notification
             'title' => "Order #" . $this->order->id . " of " . $this->order->user->name ." has been assigned to you",
             'text'         => $this->order->productOrders[0]->product->market->name,
             'image' => $this->order->productOrders[0]->product->market->getFirstMediaUrl('image', 'thumb'),
+            'sound' => 'default',
             'icon' => $this->order->productOrders[0]->product->market->getFirstMediaUrl('image', 'thumb'),
         ];
         $data = [
             'click_action' => "FLUTTER_NOTIFICATION_CLICK",
             'id' => '1',
+            'sound' => 'default',
             'status' => 'done',
             'message' => $notification,
         ];

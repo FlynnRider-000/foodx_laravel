@@ -60,6 +60,7 @@ class CouponUsed extends Notification
             'title'        => "Coupon Code : " . $this->code . " You have already used this coupon on your account",
             'body'         => "",
             'icon'         => "",
+            'sound' => 'default',
             'click_action' => "FLUTTER_NOTIFICATION_CLICK",
             'id' => '1',
             'status' => 'done',

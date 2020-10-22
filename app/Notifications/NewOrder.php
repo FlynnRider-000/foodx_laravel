@@ -62,6 +62,7 @@ class NewOrder extends Notification
             'icon'         => $this->order->productOrders[0]->product->market->getFirstMediaUrl('image', 'thumb'),
             'click_action' => "FLUTTER_NOTIFICATION_CLICK",
             'id' => '1',
+            'sound' => 'default',
             'status' => 'done',
         ];
         $message->content($notification)->data($notification)->priority(FcmMessage::PRIORITY_HIGH);

@@ -44,6 +44,7 @@ class MessageBroadCast extends Notification
             'title'        => $this->message,
             'body'         => "",
             'icon'         => "",
+            'sound' => 'default',
             'click_action' => "FLUTTER_NOTIFICATION_CLICK",
             'id' => '1',
             'status' => 'done',

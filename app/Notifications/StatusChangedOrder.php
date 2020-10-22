@@ -65,6 +65,7 @@ class StatusChangedOrder extends Notification
         $notification = [
             'title' => trans('lang.notification_your_order', ['order_id' => $this->order->id, 'order_status' => $this->order->orderStatus->status]),
             'text' => $this->order->productOrders[0]->product->market->name,
+            'sound' => 'default',
             'image' => $this->order->productOrders[0]->product->market->getFirstMediaUrl('image', 'thumb')
         ];
         $data = [
