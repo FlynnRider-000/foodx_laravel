@@ -112,6 +112,16 @@ class ProductOrderDataTable extends DataTable
                 'title' => trans('lang.product_order_quantity'),
                 'orderable' => false,
 
+            ],
+            [
+                'data' => 'product.capacity',
+                'title' => 'capacity',
+                'orderable' => false,
+            ],
+            [
+                'data' => 'product.unit',
+                'title' => 'unit',
+                'orderable' => false,
             ]
         ];
 
