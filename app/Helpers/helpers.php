@@ -76,6 +76,20 @@ function getPriceColumn($modelObject, $attributeName = 'price')
     return '-';
 }
 
+function getSubPriceColumn($modelObject, $attributeName = 'price')
+{
+
+    if ($modelObject[$attributeName] != null && strlen($modelObject[$attributeName]) > 0) {
+        $modelObject[$attributeName] = number_format((float)$modelObject[$attributeName], 2, '.', '');
+        if (setting('currency_right', false) != false) {
+            return ($modelObject[$attributeName] * $modelObject['quantity']) . "<span>" . setting('default_currency') . "</span>";
+        } else {
+            return "<span>" . setting('default_currency') . "</span>" . ($modelObject[$attributeName] * $modelObject['quantity']);
+        }
+    }
+    return '-';
+}
+
 function getPrice($price = 0)
 {
     if (setting('currency_right', false) != false) {
