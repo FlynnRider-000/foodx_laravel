@@ -40,8 +40,14 @@ class ProductOrderDataTable extends DataTable
                 }
                 return getPriceColumn($productOrder);
             })
+            ->editColumn('subtotal', function ($productOrder) {
+                foreach ($productOrder->options as $option) {
+                    $productOrder->price += $option->price;
+                }
+                return getPriceColumn($productOrder * $product_order->quantity);
+            })
             ->editColumn('product.capacity', function ($productOrder) {
-                return ($productOrder->product->capacity * $productOrder->quantity). ' ' .$productOrder->product->unit;
+                return $productOrder->product->capacity . ' ' .$productOrder->product->unit;
             })
             ->rawColumns(array_merge($columns));
 
@@ -109,6 +115,11 @@ class ProductOrderDataTable extends DataTable
                 'title' => trans('lang.product_order_price'),
                 'orderable' => false,
 
+            ],
+            [
+                'data' => 'subtotal',
+                'title' => 'Subtotal',
+                'orderable' => false,
             ],
             [
                 'data' => 'quantity',
