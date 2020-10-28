@@ -41,7 +41,7 @@ class ProductOrderDataTable extends DataTable
                 return getPriceColumn($productOrder);
             })
             ->editColumn('product.capacity', function ($productOrder) {
-                return $productOrder->product->capacity . ' ' .$productOrder->product->unit;
+                return ($productOrder->product->capacity * $productOrder->quantity). ' ' .$productOrder->product->unit;
             })
             ->rawColumns(array_merge($columns));
 
