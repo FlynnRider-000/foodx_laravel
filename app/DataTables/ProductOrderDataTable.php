@@ -44,7 +44,7 @@ class ProductOrderDataTable extends DataTable
                 foreach ($productOrder->options as $option) {
                     $productOrder->price += $option->price;
                 }
-                return getPriceColumn($productOrder * $product_order->quantity);
+                return getPriceColumn($productOrder * $productOrder->quantity);
             })
             ->editColumn('product.capacity', function ($productOrder) {
                 return $productOrder->product->capacity . ' ' .$productOrder->product->unit;
