@@ -170,7 +170,7 @@ class Product extends Model implements HasMedia
      **/
     public function category()
     {
-        return $this->belongsTo(\App\Models\Category::class, 'category_id', 'id');
+        return $this->belongsTo(\App\Models\Category::class, 'category_id', 'id')->select(array('categories.id', 'categories.name'));
     }
 
     /**
@@ -211,7 +211,7 @@ class Product extends Model implements HasMedia
      **/
     public function market()
     {
-        return $this->belongsTo(\App\Models\Market::class, 'market_id', 'id')->select(array('markets.id', 'markets.name', 'markets.default_tax', 'markets.shipping_method', 'markets.free_shipping', 'markets.limited_shipping', 'markets.delivery_fee', 'markets.mini_order', 'markets.available_for_delivery', 'markets.closed', 'markets.pay_on_pickup'));
+        return $this->belongsTo(\App\Models\Market::class, 'market_id', 'id')->select(array('markets.id', 'markets.name', 'markets.default_tax', 'markets.shipping_method', 'markets.free_shipping', 'markets.limited_shipping', 'markets.delivery_fee', 'markets.mini_order', 'markets.available_for_delivery', 'markets.closed', 'markets.pay_on_pickup', 'markets.latitude', 'markets.longitude'));
     }
 
     /**
