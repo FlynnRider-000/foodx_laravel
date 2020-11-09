@@ -106,6 +106,34 @@ class ProductAPIController extends Controller
         return $this->sendResponse($products->toArray(), 'Products retrieved successfully');
     }
 
+    public function categoriesSuper(Request $request)
+    {
+        $market = null;
+        $category = null;
+        try{
+            $this->productRepository->pushCriteria(new RequestCriteria($request));
+            $this->productRepository->pushCriteria(new LimitOffsetCriteria($request));
+            $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
+            $this->productRepository->pushCriteria(new ProductsOfCategoriesCriteria($request));
+            $this->productRepository->pushCriteria(new ProductsByPriorityCriteria($request));
+            $products = $this->productRepository->all();
+            if (count($products) > 0) {
+                $market = $products[0]->market;
+                $category = $products[0]->category;
+            }
+            $products->makeHidden('market');
+            $products->makeHidden('category');
+
+        } catch (RepositoryException $e) {
+            return $this->sendError($e->getMessage());
+        }
+        return $this->sendResponse([
+            'market' => $market,
+            'category' => $category,
+            'products' => $products->toArray()
+        ], 'Products retrieved successfully');
+    }
+
     /**
      * Display the specified Product.
      * GET|HEAD /products/{id}

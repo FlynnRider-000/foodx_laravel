@@ -50,6 +50,7 @@ Route::resource('markets', 'API\MarketAPIController');
 
 Route::resource('faq_categories', 'API\FaqCategoryAPIController');
 Route::get('products/categories', 'API\ProductAPIController@categories');
+Route::get('products/categories_super', 'API\ProductAPIController@categoriesSuper');
 Route::resource('products', 'API\ProductAPIController');
 Route::resource('galleries', 'API\GalleryAPIController');
 Route::resource('product_reviews', 'API\ProductReviewAPIController');
