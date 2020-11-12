@@ -40,7 +40,7 @@ class DeliveryAddressAPIController extends Controller
             $this->deliveryAddressRepository->pushCriteria(new RequestCriteria($request));
             $this->deliveryAddressRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $deliveryAddresses = $this->deliveryAddressRepository->all();
 

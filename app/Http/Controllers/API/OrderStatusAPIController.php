@@ -41,7 +41,7 @@ class OrderStatusAPIController extends Controller
             $this->orderStatusRepository->pushCriteria(new RequestCriteria($request));
             $this->orderStatusRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $orderStatuses = $this->orderStatusRepository->all();
 

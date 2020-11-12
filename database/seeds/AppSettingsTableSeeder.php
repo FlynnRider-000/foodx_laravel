@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: AppSettingsTableSeeder.php
- * Last modified: 2020.05.26 at 17:50:08
+ * Last modified: 2020.06.07 at 07:02:57
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *

@@ -145,6 +145,7 @@ class UserAPIController extends Controller
                 'scaffold_dark_color' => '',
                 'scaffold_color' => '',
                 'google_maps_key' => '',
+                'fcm_key' => '',
                 'mobile_language' => '',
                 'app_version' => '',
                 'enable_version' => '',

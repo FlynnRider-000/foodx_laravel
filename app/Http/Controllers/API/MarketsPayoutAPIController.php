@@ -41,7 +41,7 @@ class MarketsPayoutAPIController extends Controller
             $this->marketsPayoutRepository->pushCriteria(new RequestCriteria($request));
             $this->marketsPayoutRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $marketsPayouts = $this->marketsPayoutRepository->all();
 

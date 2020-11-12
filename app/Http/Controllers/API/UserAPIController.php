@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: UserAPIController.php
- * Last modified: 2020.05.04 at 09:04:09
+ * Last modified: 2020.10.29 at 17:03:54
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *
@@ -148,6 +148,7 @@ class UserAPIController extends Controller
                 'scaffold_dark_color' => '',
                 'scaffold_color' => '',
                 'google_maps_key' => '',
+                'fcm_key' => '',
                 'mobile_language' => '',
                 'app_version' => '',
                 'enable_version' => '',

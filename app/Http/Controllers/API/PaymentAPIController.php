@@ -40,7 +40,7 @@ class PaymentAPIController extends Controller
             $this->paymentRepository->pushCriteria(new RequestCriteria($request));
             $this->paymentRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $payments = $this->paymentRepository->all();
 

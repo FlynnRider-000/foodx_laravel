@@ -817,7 +817,7 @@ return [
     'market_review_user_id_placeholder' => 'Insert User',
     'market_table' => 'Markets List',
     'market_updated_at' => 'Updated At',
-    'market_users' => 'Market Owners',    
+    'market_users' => 'Market Owners',
     'market_users_help' => 'Select market owners',
     'markets_payout' => 'Markets Payout',
     'markets_payout_amount' => 'Amount',

@@ -42,7 +42,7 @@ class ProductReviewAPIController extends Controller
             $this->productReviewRepository->pushCriteria(new RequestCriteria($request));
             $this->productReviewRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $productReviews = $this->productReviewRepository->all();
 

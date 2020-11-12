@@ -41,7 +41,7 @@ class FaqAPIController extends Controller
             $this->faqRepository->pushCriteria(new RequestCriteria($request));
             $this->faqRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $faqs = $this->faqRepository->all();
 

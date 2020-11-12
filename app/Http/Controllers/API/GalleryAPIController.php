@@ -41,7 +41,7 @@ class GalleryAPIController extends Controller
             $this->galleryRepository->pushCriteria(new RequestCriteria($request));
             $this->galleryRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $galleries = $this->galleryRepository->all();
 

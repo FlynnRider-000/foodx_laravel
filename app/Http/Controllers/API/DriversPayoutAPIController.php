@@ -41,7 +41,7 @@ class DriversPayoutAPIController extends Controller
             $this->driversPayoutRepository->pushCriteria(new RequestCriteria($request));
             $this->driversPayoutRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $driversPayouts = $this->driversPayoutRepository->all();
 

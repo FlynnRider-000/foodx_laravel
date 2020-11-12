@@ -65,7 +65,7 @@ class MarketAPIController extends Controller
             $this->marketRepository->pushCriteria(new MarketsOfFieldsCriteria($request));
             if ($request->has('popular')) {
                 $this->marketRepository->pushCriteria(new PopularCriteria($request));
-            }else{
+            } else {
                 $this->marketRepository->pushCriteria(new NearCriteria($request));
             }
             $this->marketRepository->pushCriteria(new ActiveCriteria());
@@ -74,11 +74,7 @@ class MarketAPIController extends Controller
         } catch (RepositoryException $e) {
             return $this->sendError($e->getMessage());
         }
-        /*
-        foreach($markets as $market){
-            if(!array_key_exists($market->id, $ary)) $market['category_lists'] = '';
-            else $market['category_lists'] = $ary[$market->id];
-        }*/
+
         return $this->sendResponse($markets->toArray(), 'Markets retrieved successfully');
     }
 

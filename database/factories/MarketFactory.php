@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: MarketFactory.php
- * Last modified: 2020.04.20 at 18:08:03
+ * Last modified: 2020.04.30 at 08:21:08
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *
@@ -17,8 +17,8 @@ $factory->define(Market::class, function (Faker $faker) {
     'name' => $faker->randomElement(['Shop','Grocery','Market','Pharmacy','Mall','Furniture'])." ".$faker->company,
     'description' => $faker->text,
     'address' => $faker->address,
-        'latitude' => $faker->randomFloat(6, 55, 37),
-        'longitude' => $faker->randomFloat(6, 12, 7),
+    'latitude' => $faker->randomFloat(6, 55, 37),
+    'longitude' => $faker->randomFloat(6, 12, 7),
     'phone' => $faker->phoneNumber,
     'mobile' => $faker->phoneNumber,
     'information' => $faker->sentences(3,true),

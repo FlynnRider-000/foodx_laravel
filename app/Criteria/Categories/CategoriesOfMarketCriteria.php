@@ -7,7 +7,7 @@ use Prettus\Repository\Contracts\CriteriaInterface;
 use Prettus\Repository\Contracts\RepositoryInterface;
 
 /**
- * Class CategoriesOfMarketCriteriaCriteria.
+ * Class CategoriesOfMarketCriteria.
  *
  * @package namespace App\Criteria\Categories;
  */

@@ -240,6 +240,7 @@ class RazorPayController extends ParentOrderController
             ];
         }
 
+
         if ($this->currency !== 'INR') {
             $fields['display_amount'] = $this->total;
             $fields['display_currency'] = $this->currency;

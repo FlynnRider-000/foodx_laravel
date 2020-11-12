@@ -44,7 +44,7 @@ class MarketReviewAPIController extends Controller
             $this->marketReviewRepository->pushCriteria(new RequestCriteria($request));
             $this->marketReviewRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $marketReviews = $this->marketReviewRepository->all();
 

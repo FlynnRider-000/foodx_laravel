@@ -41,7 +41,7 @@ class OptionGroupAPIController extends Controller
             $this->optionGroupRepository->pushCriteria(new RequestCriteria($request));
             $this->optionGroupRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $optionGroups = $this->optionGroupRepository->all();
 

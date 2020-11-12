@@ -45,7 +45,7 @@ class CartAPIController extends Controller
             $this->cartRepository->pushCriteria(new RequestCriteria($request));
             $this->cartRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $carts = $this->cartRepository->all();
 
@@ -65,7 +65,7 @@ class CartAPIController extends Controller
             $this->cartRepository->pushCriteria(new RequestCriteria($request));
             $this->cartRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $count = $this->cartRepository->count();
 

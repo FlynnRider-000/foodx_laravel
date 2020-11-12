@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: api.php
- * Last modified: 2020.04.30 at 08:21:08
+ * Last modified: 2020.10.31 at 12:40:48
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *
@@ -85,6 +85,7 @@ Route::middleware('auth:api')->group(function () {
             Route::get('users/drivers_of_market/{id}', 'API\Manager\UserAPIController@driversOfMarket');
             Route::get('dashboard/{id}', 'API\DashboardAPIController@manager');
             Route::resource('markets', 'API\Manager\MarketAPIController');
+            Route::resource('notifications', 'API\NotificationAPIController');
         });
     });
     Route::post('users/{id}', 'API\UserAPIController@update');

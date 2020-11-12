@@ -41,7 +41,7 @@ class EarningAPIController extends Controller
             $this->earningRepository->pushCriteria(new RequestCriteria($request));
             $this->earningRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $earnings = $this->earningRepository->all();
 

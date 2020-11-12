@@ -41,7 +41,7 @@ class FieldAPIController extends Controller
             $this->fieldRepository->pushCriteria(new RequestCriteria($request));
             $this->fieldRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $fields = $this->fieldRepository->all();
 

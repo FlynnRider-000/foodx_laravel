@@ -1,6 +1,6 @@
 /*
  * File name: scripts.js
- * Last modified: 2020.04.29 at 22:38:56
+ * Last modified: 2020.04.30 at 08:21:08
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *

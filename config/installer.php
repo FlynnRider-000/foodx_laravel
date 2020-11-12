@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: installer.php
- * Last modified: 2020.05.27 at 18:36:54
+ * Last modified: 2020.10.31 at 12:40:12
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *
@@ -153,6 +153,6 @@ return [
     */
     'updaterEnabled' => 'true',
 
-    'currentVersion' => 'v180',
+    'currentVersion' => 'v190',
 
 ];

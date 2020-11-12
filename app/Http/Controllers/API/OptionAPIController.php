@@ -41,7 +41,7 @@ class OptionAPIController extends Controller
             $this->optionRepository->pushCriteria(new RequestCriteria($request));
             $this->optionRepository->pushCriteria(new LimitOffsetCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $options = $this->optionRepository->all();
 

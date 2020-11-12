@@ -99,7 +99,7 @@ class OrderAPIController extends Controller
             $this->orderRepository->pushCriteria(new OrdersOfStatusesCriteria($request));
             $this->orderRepository->pushCriteria(new OrdersOfUserCriteria(auth()->id()));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $orders = $this->orderRepository->all();
 
@@ -122,7 +122,7 @@ class OrderAPIController extends Controller
                 $this->orderRepository->pushCriteria(new RequestCriteria($request));
                 $this->orderRepository->pushCriteria(new LimitOffsetCriteria($request));
             } catch (RepositoryException $e) {
-                Flash::error($e->getMessage());
+                return $this->sendError($e->getMessage());
             }
             $order = $this->orderRepository->findWithoutFail($id);
         }
@@ -276,9 +276,11 @@ class OrderAPIController extends Controller
             Log::info($input['products']);
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;
+                $amount += $productOrder['price'] * $productOrder['quantity'];
                 $this->productOrderRepository->create($productOrder);
             }
-            $amountWithTax = $input['total'];
+            $amount += $order->delivery_fee;
+            $amountWithTax = $amount + ($amount * $order->tax / 100);
             $payment = $this->paymentRepository->create([
                 "user_id" => $input['user_id'],
                 "description" => trans("lang.payment_order_waiting"),

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\API;
 
 
-use App\Criteria\Drivers\DriversOfUserCriteria;
 use App\Models\Driver;
 use App\Repositories\DriverRepository;
 use Illuminate\Http\Request;
@@ -41,9 +40,8 @@ class DriverAPIController extends Controller
         try{
             $this->driverRepository->pushCriteria(new RequestCriteria($request));
             $this->driverRepository->pushCriteria(new LimitOffsetCriteria($request));
-            $this->driverRepository->pushCriteria(new DriversOfUserCriteria());
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $drivers = $this->driverRepository->all();
 

@@ -8,18 +8,16 @@ use App\Criteria\Categories\CategoriesOfMarketCriteria;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Repositories\CategoryRepository;
+use Flash;
 use Illuminate\Http\Request;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
 use Prettus\Repository\Criteria\RequestCriteria;
-use Illuminate\Support\Facades\Response;
 use Prettus\Repository\Exceptions\RepositoryException;
-use Flash;
 
 /**
  * Class CategoryController
  * @package App\Http\Controllers\API
  */
-
 class CategoryAPIController extends Controller
 {
     /** @var  CategoryRepository */
@@ -45,7 +43,7 @@ class CategoryAPIController extends Controller
             $this->categoryRepository->pushCriteria(new CategoriesOfFieldsCriteria($request));
             $this->categoryRepository->pushCriteria(new CategoriesOfMarketCriteria($request));
         } catch (RepositoryException $e) {
-            Flash::error($e->getMessage());
+            return $this->sendError($e->getMessage());
         }
         $categories = $this->categoryRepository->all();
 

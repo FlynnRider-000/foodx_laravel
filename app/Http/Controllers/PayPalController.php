@@ -135,7 +135,7 @@ class PayPalController extends ParentOrderController
             return redirect(url('payments/paypal'));
         } else {
             Flash::error("Error processing PayPal payment for your order");
-            return redirect(url('payments.failed'));
+            return redirect(route('payments.failed'));
         }
     }
 }

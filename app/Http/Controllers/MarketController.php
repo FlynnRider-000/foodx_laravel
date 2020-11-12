@@ -1,7 +1,7 @@
 <?php
 /**
  * File name: MarketController.php
- * Last modified: 2020.04.29 at 18:37:10
+ * Last modified: 2020.04.30 at 08:21:08
  * Author: SmarterVision - https://codecanyon.net/user/smartervision
  * Copyright (c) 2020
  *
@@ -74,7 +74,7 @@ class MarketController extends Controller
     {
         return $marketDataTable->render('markets.index');
     }
-    
+
     /**
      * Display a listing of the Market.
      *
@@ -85,7 +85,7 @@ class MarketController extends Controller
     {
         return $requestedMarketDataTable->render('markets.requested');
     }
-    
+
     /**
      * Show the form for creating a new Market.
      *
@@ -118,7 +118,7 @@ class MarketController extends Controller
     public function store(CreateMarketRequest $request)
     {
         $input = $request->all();
-        if (auth()->user()->hasRole(['manager', 'client'])) {
+        if (auth()->user()->hasRole(['manager','client'])) {
             $input['users'] = [auth()->id()];
         }
         $customFields = $this->customFieldRepository->findByField('custom_field_model', $this->marketRepository->model());
@@ -184,6 +184,7 @@ class MarketController extends Controller
         } else {
             $user = $this->userRepository->getByCriteria(new ManagersCriteria())->pluck('name', 'id');
         }
+        //$user = $market->users();
         $drivers = $this->userRepository->getByCriteria(new DriversCriteria())->pluck('name', 'id');
         $field = $this->fieldRepository->pluck('name', 'id');
 
