@@ -280,7 +280,7 @@ class OrderAPIController extends Controller
             $payment = $this->paymentRepository->create([
                 "user_id" => $input['user_id'],
                 "description" => trans("lang.payment_order_waiting"),
-                "price" => $input['amount'],
+                "price" => $input['total'],
                 "status" => 'Waiting for Client',
                 "method" => $input['payment']['method'],
             ]);
