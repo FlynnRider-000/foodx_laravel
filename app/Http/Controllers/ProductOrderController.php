@@ -9,8 +9,8 @@ use App\Http\Requests\UpdateProductOrderRequest;
 use App\Repositories\ProductOrderRepository;
 use App\Repositories\CustomFieldRepository;
 use App\Repositories\ProductRepository;
-                use App\Repositories\OptionRepository;
-                use App\Repositories\OrderRepository;
+use App\Repositories\OptionRepository;
+use App\Repositories\OrderRepository;
 use Flash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -69,8 +69,8 @@ private $orderRepository;
     public function create()
     {
         $product = $this->productRepository->pluck('name','id');
-                $option = $this->optionRepository->pluck('name','id');
-                $order = $this->orderRepository->pluck('id','id');
+        $option = $this->optionRepository->pluck('name','id');
+        $order = $this->orderRepository->pluck('id','id');
         $optionsSelected = [];
         $hasCustomField = in_array($this->productOrderRepository->model(),setting('custom_field_models',[]));
             if($hasCustomField){

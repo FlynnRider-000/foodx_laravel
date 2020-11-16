@@ -268,7 +268,6 @@ class OrderAPIController extends Controller
     private function cashPayment(Request $request)
     {
         $input = $request->all();
-        $amount = 0;
         try {
             $order = $this->orderRepository->create(
                 $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint', 'check_out_note')
@@ -276,18 +275,22 @@ class OrderAPIController extends Controller
             Log::info($input['products']);
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;
-                $amount += $productOrder['price'] * $productOrder['quantity'];
                 $this->productOrderRepository->create($productOrder);
             }
-            $amount += $order->delivery_fee;
-            $amountWithTax = $amount + ($amount * $order->tax / 100);
             $payment = $this->paymentRepository->create([
                 "user_id" => $input['user_id'],
                 "description" => trans("lang.payment_order_waiting"),
-                "price" => $amountWithTax,
+                "price" => $input['amount'],
                 "status" => 'Waiting for Client',
                 "method" => $input['payment']['method'],
             ]);
+
+            if ($input['isCouponUsed']) {
+                $couponHistory = new CouponHistory;
+                $couponHistory->coupon_code = $input['usedCoupon'];
+                $couponHistory->customer_id = $order->user_id;
+                $couponHistory->save();
+            }
 
             $this->orderRepository->update(['payment_id' => $payment->id], $order->id);
 
