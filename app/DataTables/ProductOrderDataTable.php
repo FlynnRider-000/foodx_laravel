@@ -41,9 +41,6 @@ class ProductOrderDataTable extends DataTable
                 return getPriceColumn($productOrder);
             })
             ->editColumn('subtotal', function ($productOrder) {
-                foreach ($productOrder->options as $option) {
-                    $productOrder->price += $option->price;
-                }
                 return getSubPriceColumn($productOrder);
             })
             ->editColumn('product.capacity', function ($productOrder) {
