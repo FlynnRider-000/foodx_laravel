@@ -44,10 +44,10 @@ class SlideDataTable extends DataTable
                 return getBooleanColumn($slide, 'enabled');
             })
             ->editColumn('market.name', function ($slide) {
-                return $slider->market ? $slider->market->name : '';
+                return $slide->market ? $slide->market->name : '';
             })
             ->editColumn('product.name', function ($slide) {
-                return $slider->product ? $slider->product->name : '';
+                return $slide->product ? $slide->product->name : '';
             })
             ->addColumn('action', 'slides.datatables_actions')
             ->rawColumns(array_merge($columns, ['action']));
