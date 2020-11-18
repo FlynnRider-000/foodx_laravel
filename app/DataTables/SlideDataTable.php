@@ -43,6 +43,12 @@ class SlideDataTable extends DataTable
             ->editColumn('enabled', function ($slide) {
                 return getBooleanColumn($slide, 'enabled');
             })
+            ->editColumn('market.name', function ($slide) {
+                return $slider->market ? $slider->market->name : '';
+            })
+            ->editColumn('product.name', function ($slide) {
+                return $slider->product ? $slider->product->name : '';
+            })
             ->addColumn('action', 'slides.datatables_actions')
             ->rawColumns(array_merge($columns, ['action']));
 
