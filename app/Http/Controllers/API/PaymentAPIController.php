@@ -73,7 +73,7 @@ class PaymentAPIController extends Controller
     {
         $payments = [];
         if (!empty($this->paymentRepository)) {
-            $payments = $this->paymentRepository->orderBy("created_at",'asc')->where('status', 'Paid')->all()->map(function ($row) {
+            $payments = $this->paymentRepository->where('status', 'Paid')->orderBy("created_at",'asc')->map(function ($row) {
                 $row['month'] = $row['created_at']->format('M');
                 return $row;
             })->groupBy('month')->map(function ($row) {
