@@ -269,9 +269,9 @@ class OrderAPIController extends Controller
     {
         $input = $request->all();
         try {
-            $order = $this->orderRepository->create(
-                $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint', 'check_out_note')
-            );
+            $orderDetail = $request->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint', 'check_out_note');
+            $orderDetail['coupon_used'] = $input['isCouponUsed'];
+            $order = $this->orderRepository->create($orderDetail);
             Log::info($input['products']);
             foreach ($input['products'] as $productOrder) {
                 $productOrder['order_id'] = $order->id;

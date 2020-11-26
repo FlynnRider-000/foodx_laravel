@@ -52,6 +52,9 @@ class OrderDataTable extends DataTable
             ->editColumn('payment.price', function ($order) {
                 return getPriceColumn($order->payment, 'price');
             })
+            ->editColumn('coupon_used', function ($order) {
+                return getBooleanColumn($order, 'coupon_used');
+            })
             ->editColumn('active', function ($product) {
                 return getBooleanColumn($product, 'active');
             })
@@ -78,7 +81,7 @@ class OrderDataTable extends DataTable
                 'data' => 'user.name',
                 'name' => 'user.name',
                 'title' => trans('lang.order_user_id'),
-
+                'searchable' => true,
             ],
             [
                 'data' => 'order_status.status',
@@ -90,6 +93,7 @@ class OrderDataTable extends DataTable
                 'data' => 'name',
                 'name' => 'name',
                 'title' => trans('lang.market_name'),
+                'searchable' => true,
             ],
             [
                 'data' => 'tax',
@@ -124,6 +128,10 @@ class OrderDataTable extends DataTable
                 'data' => 'active',
                 'title' => trans('lang.order_active'),
 
+            ],
+            [
+                'data' => 'coupon_used',
+                'title' => 'Coupon Used',
             ],
             [
                 'data' => 'check_out_note',

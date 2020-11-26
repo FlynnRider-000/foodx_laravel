@@ -169,6 +169,7 @@ class RazorPayController extends ParentOrderController
             $this->order->payment->status = trans('lang.order_paid');
             $this->order->payment->method = 'RazorPay';
             $this->order->payment->description = $description;
+            $this->order->coupon_used = $this->couponCode != "" ? 1 : 0;
 
             $this->createOrder();
 

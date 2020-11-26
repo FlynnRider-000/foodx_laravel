@@ -94,7 +94,7 @@ abstract class ParentOrderController extends Controller
             $this->calculateTotal();
             $this->order->order_status_id = 1;
             try {
-                $orders = (collect($this->order))->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint')->toArray();
+                $orders = (collect($this->order))->only('user_id', 'order_status_id', 'tax', 'delivery_address_id', 'delivery_fee', 'hint', 'coupon_used')->toArray();
                 $order = $this->orderRepository->create($orders);
                 $this->order->id = $order->id;
                 $this->syncProducts();

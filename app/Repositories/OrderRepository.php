@@ -27,6 +27,7 @@ class OrderRepository extends BaseRepository
         'check_out_note',
         'payment_id',
         'delivery_address_id',
+        'coupon_used',
         'active',
         'driver_id',
     ];

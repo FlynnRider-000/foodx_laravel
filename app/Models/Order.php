@@ -46,6 +46,7 @@ class Order extends Model
         'delivery_address_id',
         'delivery_fee',
         'active',
+        'coupon_used',
         'check_out_note',
         'driver_id'
     ];
@@ -63,8 +64,9 @@ class Order extends Model
         'status' => 'string',
         'payment_id' => 'integer',
         'delivery_address_id' => 'integer',
-        'delivery_fee'=>'double',
-        'active'=>'boolean',
+        'delivery_fee' => 'double',
+        'active' => 'boolean',
+        'coupon_used' => 'boolean',
         'check_out_note'=>'string',
         'driver_id' => 'integer',
     ];
