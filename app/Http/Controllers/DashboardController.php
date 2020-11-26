@@ -45,7 +45,7 @@ class DashboardController extends Controller
         $membersCount = $this->userRepository->count();
         $marketsCount = $this->marketRepository->count();
         $markets = $this->marketRepository->limit(4)->get();
-        $earning = $this->paymentRepository->where('status', 'Paid')->where('active', 1)->sum('price');
+        $earning = $this->paymentRepository->where('status', 'Paid')->sum('price');
         $ajaxEarningUrl = route('payments.byMonth',['api_token'=>auth()->user()->api_token]);
 //        dd($ajaxEarningUrl);
         return view('dashboard.index')
