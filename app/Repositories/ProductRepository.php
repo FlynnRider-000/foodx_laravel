@@ -67,9 +67,15 @@ class ProductRepository extends BaseRepository implements CacheableInterface
         $products = [];
         foreach ($this->all() as $model) {
             if(!empty($model->market)){
-            $products[$model->market->name][$model->id] = $model->name;
-        }
+                $products[$model->market->name][$model->id] = $model->name;
+            }
         }
         return $products;
+    }
+    
+    public function getWithoutRelations()
+    {
+        // $this->setAppends(['custom_fields', 'has_media']);
+        return $this->without('category')->without('market')->get()->each->setAppends(['custom_fields', 'has_media']);
     }
 }

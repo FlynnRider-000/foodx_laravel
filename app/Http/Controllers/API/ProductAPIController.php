@@ -21,6 +21,8 @@ use App\Models\Product;
 use App\Repositories\CustomFieldRepository;
 use App\Repositories\ProductRepository;
 use App\Repositories\UploadRepository;
+use App\Repositories\MarketRepository;
+use App\Repositories\CategoryRepository;
 use Flash;
 use Illuminate\Http\Request;
 use InfyOm\Generator\Criteria\LimitOffsetCriteria;
@@ -34,6 +36,10 @@ use Prettus\Validator\Exceptions\ValidatorException;
  */
 class ProductAPIController extends Controller
 {
+    /** @var  MarketRepository */
+    private $marketRepository;
+    /** @var  CategoryRepository */
+    private $categoryRepository;
     /** @var  ProductRepository */
     private $productRepository;
     /**
@@ -46,12 +52,14 @@ class ProductAPIController extends Controller
     private $uploadRepository;
 
 
-    public function __construct(ProductRepository $productRepo, CustomFieldRepository $customFieldRepo, UploadRepository $uploadRepo)
+    public function __construct(ProductRepository $productRepo, CustomFieldRepository $customFieldRepo, UploadRepository $uploadRepo, CategoryRepository $categoryRepo, MarketRepository $marketRepo)
     {
         parent::__construct();
         $this->productRepository = $productRepo;
         $this->customFieldRepository = $customFieldRepo;
         $this->uploadRepository = $uploadRepo;
+        $this->marketRepository = $marketRepo;
+        $this->categoryRepository = $categoryRepo;
     }
 
     /**
@@ -116,13 +124,11 @@ class ProductAPIController extends Controller
             $this->productRepository->pushCriteria(new ProductsOfFieldsCriteria($request));
             $this->productRepository->pushCriteria(new ProductsOfCategoriesCriteria($request));
             $this->productRepository->pushCriteria(new ProductsByPriorityCriteria($request));
-            $products = $this->productRepository->all();
+            $products = $this->productRepository->getWithoutRelations();
             if (count($products) > 0) {
-                $market = $products[0]->market;
-                $category = $products[0]->category;
+                $market = $this->marketRepository->findWithoutFail($products[0]->market_id);
+                $category = $this->categoryRepository->findWithoutFail($products[0]->category_id);;
             }
-            $products->makeHidden('market');
-            $products->makeHidden('category');
 
         } catch (RepositoryException $e) {
             return $this->sendError($e->getMessage());
@@ -130,7 +136,7 @@ class ProductAPIController extends Controller
         return $this->sendResponse([
             'market' => $market,
             'category' => $category,
-            'products' => $products->toArray()
+            'products' => $products
         ], 'Products retrieved successfully');
     }
 
